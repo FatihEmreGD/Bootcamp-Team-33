@@ -22,10 +22,41 @@
 
 ![Logo  (1)](https://github.com/user-attachments/assets/ad2a254d-f4d0-4604-84d7-7685e91ccabb)
 
-
 ## Oyun Açıklaması
 
+ChefTails" 3D izometrik görünüme sahip, karakter odaklı bir mobil yemek simülasyon oyunudur. Oyuncular, Vellora adlı şehirde gizli bir restoran olan "The Hidden Pan"i işletirken, farklı geçmişlere sahip beş benzersiz şefin hikâyelerini keşfeder. Oyunda her şef farklı yemek türlerinde uzmanlaşmıştır. Oyuncular restoranı yönetir, siparişleri hazırlar, müşterilere servis yapar ve restoranı geliştirerek yeni şefleri açar.
 
+## Oyun Hikayesi
 
+Vellora şehri, zamanında gastronomi dünyasının parlayan yıldızı olan ancak yıllar önce kapanan gizemli bir restoranın sessizce yeniden açılışına tanıklık etmektedir: The Hidden Pan.
 
+Bruno, eski bir dağ otelinde görev yapan, öfkesine yenik düşüp her şeyini geride bırakmış ödüllü bir şeftir. Sis, geçmişi devlet kayıtlarından silinmiş, yalnızca sessizce yemek pişirerek varlığını sürdüren gizemli bir figürdür. Lilly, yaptığı bir hata sonrası utançla şehri terk etmiş, ama içinde hâlâ büyük bir tutkuyu taşıyan genç bir çıraktır. Mimi, sahil kasabasındaki restoranını kaybettikten sonra neşesini korusa da güvenini yitirmiştir. Thollo ise bir kazadan sonra inzivaya çekilmiş, ancak yeniden mutfağa dönmeye hazır eski bir eğitmendir.
+
+ChefSoul, bu beş karakterin rastlantı gibi görünen karşılaşmalarının, aslında bir yeniden doğuşa dönüştüğü dokunaklı bir anlatı sunar. Oyuncu, The Hidden Pan’i adım adım geliştirirken hem restoranı büyütür hem de karakterlerin kişisel dönüşümlerine tanıklık eder. Her yeni gün, yalnızca siparişlerin değil, geçmişle hesaplaşmaların da servis edildiği bir deneyime dönüşür.
+
+## Oyun Özellikleri
+
+•	3D izometrik görünüm
+•	Çok oyunculu (Multiplayer)
+•	Karakter odaklı anlatı
+•	Restoran yönetimi
+•	Low-poly stil
+•	Mobil platform uyumu
+
+## Hedef Kitle
+
+•	16–35 yaş arası mobil oyuncular
+•	Hikâye odaklı ve karakter gelişimli oyunları sevenler
+•	Çok oyunculu ve iş birliğine dayalı oyun deneyimlerine ilgi duyanlar
+
+## Pazarlama Planı
+
+•	Hikâye ve karakter odaklı oynanış, pazarlama stratejisinin merkezini oluşturur. Oyunun yalnızca bir simülasyon değil, duygusal bağ kurulan bir deneyim olarak sunulması hedeflenmektedir.
+•	Sosyal medya kampanyaları ile oyuncu kitlesi oluşturulacaktır. Özellikle TikTok, Instagram ve YouTube Shorts gibi platformlarda karakter tanıtımları, sinematik fragmanlar ve mizahi içerikler paylaşılacaktır.
+•	Oyun ücretsiz indirilebilir olacak; gelir modeli ise oyun içi kozmetik öğeler ve karakter temalı paketlerle oluşturulacaktır.
+•	Lansman döneminde, sınırlı süreli özel karakterler ve tanıtım kodları ile erken kullanıcı kitlesinin hızlıca büyümesi sağlanacaktır.
+
+## Product Backlog URL
+
+[Miro Backlog Board](https://miro.com/app/board/uXjVIkc1Du0=/)
 
