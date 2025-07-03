@@ -72,8 +72,8 @@ ChefSoul, bu beş karakterin rastlantı gibi görünen karşılaşmalarının, a
 
 - **Puan tamamlama mantığı**: Proje boyunca tamamlanması gereken backlog puanı 300 olarak belirlenmiştir. 3 sprinte bölündüğünde ilk sprintin 100 puan olacacağı kararlaştırılmıştır.
 
-- **Backlog düzeni ve Story seçimleri**:
+- **Backlog düzeni ve Story seçimleri**: Backlog, oyun içinde gerçekleştirilmesi gereken tüm görevleri kapsamaktadır. Görevler, sprint içerisindeki puan sınırını aşmayacak şekilde ve yapılması gereken sıraya göre düzenlenmiştir. Takip ve görev yönetimini kolaylaştırmak amacıyla her görev türüne göre renklendirilmiştir. Mavi renk tasarımı, kırmızı kodlamayı, mor ses tasarımını, sarı görsel efektleri ve açık yeşil türü belirsiz görevleri temsil etmektedir. Bu renk sistemi, görevlerin hızlıca ayırt edilmesini ve ekip içi iş bölümünün daha verimli bir şekilde yürütülmesi amaçlanmıştır. Bu sistem sayesinde görevlerin türü hızlıca ayırt edilebilir ve ekip içi iş bölümü daha verimli şekilde yürütülmesi amaçlanmıştır.
 
-- **Daily Scrum**: Günlük iletişim, ekip içi gelişmeleri paylaşmak için WhatsApp üzerinden iletişim sağlanacağı belirlenmiştir. Her 3 günde bir, ilerleme değerlendirmesi ve görev güncellemeleri için de Slack üzerinden çevrim içi toplantılar gerçekleştilmesi kararlaştırılmıştır.
+- **Daily Scrum**: Günlük iletişim, ekip içi gelişmeleri paylaşmak için WhatsApp üzerinden iletişim sağlanacağı belirlenmiştir. Her 3 günde bir, ilerleme değerlendirmesi ve görev güncellemeleri için de Slack üzerinden çevrim içi toplantılar gerçekleştilmesi kararlaştırılmıştır. WhatsApp konuşmalarımız ve toplantı özetlerimiz Imgur'da toplanmıştır. :
 
 - **Sprint board update**: Sprint board screenshot: 
