@@ -2,9 +2,7 @@
 
 **UNIT 33**
 
-## **Takım Logosu**
-
-![Logo](https://github.com/user-attachments/assets/9728d415-46bc-4af8-a0ea-7b9af48bf4f0)
+![takım logo (3)](https://github.com/user-attachments/assets/936d7984-9678-4c59-ba7b-86e7d8e0354f)
 
 ## Takım Elemanları
 
@@ -22,5 +20,12 @@
 
 ## Oyun Logosu
 
-![Logo  (1)](https://github.com/user-attachments/assets/03608a1b-0507-4f3e-976f-87a71ea95c9d)
+![Logo  (1)](https://github.com/user-attachments/assets/ad2a254d-f4d0-4604-84d7-7685e91ccabb)
+
+
+## Oyun Açıklaması
+
+
+
+
 
