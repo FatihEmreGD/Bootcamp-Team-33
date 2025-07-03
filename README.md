@@ -38,27 +38,42 @@ ChefSoul, bu beş karakterin rastlantı gibi görünen karşılaşmalarının, a
 
 ## Oyun Özellikleri
 
-•	3D izometrik görünüm
-•	Çok oyunculu (Multiplayer)
-•	Karakter odaklı anlatı
-•	Restoran yönetimi
-•	Low-poly stil
-•	Mobil platform uyumu
+-	3D izometrik görünüm
+- Çok oyunculu (Multiplayer)
+- Karakter odaklı anlatı
+- Restoran yönetimi
+-	Low-poly stil
+- Mobil platform uyumu
 
 ## Hedef Kitle
 
-•	16–35 yaş arası mobil oyuncular
-•	Hikâye odaklı ve karakter gelişimli oyunları sevenler
-•	Çok oyunculu ve iş birliğine dayalı oyun deneyimlerine ilgi duyanlar
+- 16–35 yaş arası mobil oyuncular
+-	Hikâye odaklı ve karakter gelişimli oyunları sevenler
+- Çok oyunculu ve iş birliğine dayalı oyun deneyimlerine ilgi duyanlar
 
 ## Pazarlama Planı
 
-•	Hikâye ve karakter odaklı oynanış, pazarlama stratejisinin merkezini oluşturur. Oyunun yalnızca bir simülasyon değil, duygusal bağ kurulan bir deneyim olarak sunulması hedeflenmektedir.
-•	Sosyal medya kampanyaları ile oyuncu kitlesi oluşturulacaktır. Özellikle TikTok, Instagram ve YouTube Shorts gibi platformlarda karakter tanıtımları, sinematik fragmanlar ve mizahi içerikler paylaşılacaktır.
-•	Oyun ücretsiz indirilebilir olacak; gelir modeli ise oyun içi kozmetik öğeler ve karakter temalı paketlerle oluşturulacaktır.
-•	Lansman döneminde, sınırlı süreli özel karakterler ve tanıtım kodları ile erken kullanıcı kitlesinin hızlıca büyümesi sağlanacaktır.
+- Hikâye ve karakter odaklı oynanış, pazarlama stratejisinin merkezini oluşturur. Oyunun yalnızca bir simülasyon değil, duygusal bağ kurulan bir deneyim olarak sunulması hedeflenmektedir.
+- Sosyal medya kampanyaları ile oyuncu kitlesi oluşturulacaktır. Özellikle TikTok, Instagram ve YouTube Shorts gibi platformlarda karakter tanıtımları, sinematik fragmanlar ve mizahi içerikler paylaşılacaktır.
+- Oyun ücretsiz indirilebilir olacak; gelir modeli ise oyun içi kozmetik öğeler ve karakter temalı paketlerle oluşturulacaktır.
+- Lansman döneminde, sınırlı süreli özel karakterler ve tanıtım kodları ile erken kullanıcı kitlesinin hızlıca büyümesi sağlanacaktır.
 
 ## Product Backlog URL
 
 [Miro Backlog Board](https://miro.com/app/board/uXjVIkc1Du0=/)
 
+---
+
+# Sprint 1
+
+- **Sprint Notları**: User Story'ler product backlog'ların içine yazılmıştır. Product backlog item'lara tıklandığında hikayelerin detayları ve kabul kriterleri okunabilmektedir.
+
+- **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan
+
+- **Puan tamamlama mantığı**: Proje boyunca tamamlanması gereken backlog puanı 300 olarak belirlenmiştir. 3 sprinte bölündüğünde ilk sprintin 100 puan olacacağı kararlaştırılmıştır.
+
+- **Backlog düzeni ve Story seçimleri**:
+
+- **Daily Scrum**: Günlük iletişim, ekip içi gelişmeleri paylaşmak için WhatsApp üzerinden iletişim sağlanacağı belirlenmiştir. Her 3 günde bir, ilerleme değerlendirmesi ve görev güncellemeleri için de Slack üzerinden çevrim içi toplantılar gerçekleştilmesi kararlaştırılmıştır.
+
+- **Sprint board update**: Sprint board screenshot: 
