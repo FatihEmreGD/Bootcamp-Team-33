@@ -2,6 +2,8 @@
 
 **UNIT 33**
 
+## **Takım Logosu**
+
 ![takım logo (3)](https://github.com/user-attachments/assets/936d7984-9678-4c59-ba7b-86e7d8e0354f)
 
 ## Takım Elemanları
