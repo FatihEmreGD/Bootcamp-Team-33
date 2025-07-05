@@ -65,11 +65,11 @@ ChefSoul, bu beş karakterin rastlantı gibi görünen karşılaşmalarının, a
 
 # Sprint 1
 
-- **Sprint Notları**: User Story'ler product backlog'ların içine yazılmıştır. Product backlog item'lara tıklandığında hikayelerin detayları ve kabul kriterleri okunabilmektedir.
+- **Sprint Notları**: Sprint 1’in temel hedefi, oyunun iskeletini oluşturmaya başlamaktır. Bu kapsamda, oyunun temel kontrol yapısının kurulması, ana mekan tasarımının asset’lerle yerleştirilmesi ve kullanıcı arayüzünün giriş ekranı ile ilk akışlarının oluşturulması amaçlanmaktadır. Böylece, proje sonunda oynanabilir bir temel sistem elde edilmesi hedeflenmiştir. Sprint 1 kapsamında ekip olarak 100 puanlık iş yükü hedeflenmiştir. Görevler, öncelikli sistem gereksinimlerine ve oyun içi temel işleyişe odaklanacak şekilde seçilmiştir. Özellikle temel karakter kontrolleri, iç ve dış mekân sahnelemeleri, mutfak cihazları etkileşimleri gibi kullanıcı deneyimini doğrudan etkileyen fonksiyonlar bu sprintte ele alınmıştır.
 
-- **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan
+- **Sprint içinde tamamlanması tahmin edilen puan**: 100 puan olarak kararlaştırılmıştır.
 
-- **Puan tamamlama mantığı**: Proje boyunca tamamlanması gereken backlog puanı 300 olarak belirlenmiştir. 3 sprinte bölündüğünde ilk sprintin 100 puan olacacağı kararlaştırılmıştır.
+- **Puan tamamlama mantığı**: Oyun genelindeki görevlerin toplam puanı 300 olarak belirlenmiş; bu puan, her biri eşit ağırlıkta olacak şekilde 3 sprinte bölünmüştür. Sprint 1’de sistemin temel bileşenlerine öncelik verilerek görev seçimi bu yapıya uygun biçimde planlanmıştır. Görev puanlamaları, her bir görevin zorluk seviyesi ve tahmini iş gücüne göre belirlenmiş; sprint içindeki görevler arasında denge sağlanmasına özellikle dikkat edilmiştir.
 
 - **Backlog düzeni ve Story seçimleri**: Backlog, oyun içinde gerçekleştirilmesi gereken tüm görevleri kapsamaktadır. Görevler, sprint içerisindeki puan sınırını aşmayacak şekilde ve yapılması gereken sıraya göre düzenlenmiştir. Takip ve görev yönetimini kolaylaştırmak amacıyla her görev türüne göre renklendirilmiştir. Mavi renk tasarımı, bordo kodlamayı, mor ses tasarımını, sarı görsel efektleri ve açık yeşil türü belirsiz görevleri temsil etmektedir. Bu renk sistemi, görevlerin hızlıca ayırt edilmesini ve ekip içi iş bölümünün daha verimli bir şekilde yürütülmesi amaçlanmıştır. Bu sistem sayesinde görevlerin türü hızlıca ayırt edilebilir ve ekip içi iş bölümü daha verimli şekilde yürütülmesi amaçlanmıştır.
 
