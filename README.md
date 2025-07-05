@@ -54,7 +54,7 @@ ChefSoul, bu beş karakterin rastlantı gibi görünen karşılaşmalarının, a
 
 - Hikâye ve karakter odaklı oynanış, pazarlama stratejisinin merkezini oluşturur. Oyunun yalnızca bir simülasyon değil, duygusal bağ kurulan bir deneyim olarak sunulması hedeflenmektedir.
 - Sosyal medya kampanyaları ile oyuncu kitlesi oluşturulacaktır. Özellikle TikTok, Instagram ve YouTube Shorts gibi platformlarda karakter tanıtımları, sinematik fragmanlar ve mizahi içerikler paylaşılacaktır.
-– Oyun ücretsiz indirilebilir olacak; gelir modeli ise oyun içi reklamlar üzerinden sağlanacaktır.
+- Oyun ücretsiz indirilebilir olacak; gelir modeli ise oyun içi reklamlar üzerinden sağlanacaktır.
   
 
 ## Product Backlog URL
