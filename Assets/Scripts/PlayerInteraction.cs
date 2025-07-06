@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerInteraction : MonoBehaviour
 {
     public GameObject heldItem;       // Oyuncunun elindeki eþya
-    public Transform handPoint;       // Eþyayý tutacaðý nokta (karakterin eli gibi)
+    public Transform handPoint;       // Eþyayý tutacaðý nokta
     public Table activeTable;  // Yaklaþýlan masa
 
 
