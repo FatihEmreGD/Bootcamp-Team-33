@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
 {
-    public GameObject heldItem;
-    public Transform handPoint;
+    public GameObject heldItem;       // Oyuncunun elindeki eþya
+    public Transform handPoint;       // Eþyayý tutacaðý nokta (karakterin eli gibi)
+    public Table activeTable;  // Yaklaþýlan masa
+
 
     public void PickUpItem(GameObject item)
     {
