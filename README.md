@@ -99,7 +99,7 @@ ChefSoul, bu beş karakterin rastlantı gibi görünen karşılaşmalarının, a
   - Sprint 1 başlangıcında, ekip içi iletişimin günlük olarak WhatsApp üzerinden sağlanması ve her 3 günde bir Slack üzerinden çevrim içi toplantı yapılması planlanmıştı. Ancak bu plana tam anlamıyla uyulamadı. Düzenli toplantılar gerçekleştirilmedi ve ekip üyeleri yalnızca acil durumlarda WhatsApp üzerinden haberleşti.
 
   - **Sprint 2 için alınan aksiyonlar şunlardır:**
-  - **Görev Başlangıç-Bitiş Tarihleri:** Her görev için net başlangıç ve bitiş tarihleri belirlenecek ve sprint başında takıma duyurulacaktır.
+  - **Görev Başlangıç-Bitiş Tarihleri:** Her görev için net başlangıç ve bitiş tarihleri belirlenecek ve sprint başında takımla kararlaştırılacaktır.
   - **Görev Dağılımı:** Sprint başlangıcında görevler her ekip üyesine eşit ve net şekilde atanacak, sorumluluk karışıklığı önlenecektir.
   - **İletişim Takibi:** WhatsApp yalnızca acil durumlar için değil, günlük ilerlemeleri paylaşmak amacıyla da kullanılacaktır.
   - **Toplantı Disiplini:** Her gün 15–20 dakikalık kısa toplantılar yapılması hedeflenmektedir. Ayrıca hafta sonunda tüm ekip üyelerinin katılımıyla daha kapsamlı bir toplantı gerçekleştirilecek; oyunla ilgili genel fikirler, gelişmeler ve karşılaşılan sorunlar birlikte değerlendirilecektir. Bu toplantılar sırasında görevlerin ilerleme durumu izlenecek ve gerekli aksiyonlar zamanında alınacaktır.
