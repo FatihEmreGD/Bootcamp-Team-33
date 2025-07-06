@@ -82,7 +82,8 @@ ChefSoul, bu beş karakterin rastlantı gibi görünen karşılaşmalarının, a
 
 <details> <summary><h3>Ürün Durumu: Ekran Görüntüleri</h3></summary>
   
- 
+ ![Bootcamp-Team-33-giriş-ekranı-Windows_-Mac_-Linux-Unity-6-_6000 0 40f1_-_DX11_-2025-07-06-21-45-02](https://github.com/user-attachments/assets/e887c33a-fe7e-440d-99b9-8e636b140bb3)
+
 
 </details>
 
