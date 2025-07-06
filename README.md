@@ -83,6 +83,7 @@ ChefSoul, bu beş karakterin rastlantı gibi görünen karşılaşmalarının, a
 <details> <summary><h3>Ürün Durumu: Ekran Görüntüleri</h3></summary>
   
 ![Tencere Taşım](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWYzYWRrNWpoZDlqc2MwcWY1ZHM0dWN1cHZqYmV6cWk3MWM0Y3N6bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ocplsn40kMGN7wn15K/giphy.gif)
+![Gezme](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzIwa3J3dzRxeTN0YWh4dzdqb2NxN2lpazB3Z2U0eGxpOHdvb3FiMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/rSrjv9W7i4lPCeUnUG/giphy.gif)
 
 
 </details>
