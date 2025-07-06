@@ -36,6 +36,7 @@ Bruno, eski bir dağ otelinde görev yapan, öfkesine yenik düşüp her şeyini
 ChefSoul, bu beş karakterin rastlantı gibi görünen karşılaşmalarının, aslında bir yeniden doğuşa dönüştüğü dokunaklı bir anlatı sunar. Oyuncu, The Hidden Pan’i adım adım geliştirirken hem restoranı büyütür hem de karakterlerin kişisel dönüşümlerine tanıklık eder. Her yeni gün, yalnızca siparişlerin değil, geçmişle hesaplaşmaların da servis edildiği bir deneyime dönüşür.
 
 ## Oyun Özellikleri
+![Tencere Taşım](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWYzYWRrNWpoZDlqc2MwcWY1ZHM0dWN1cHZqYmV6cWk3MWM0Y3N6bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ocplsn40kMGN7wn15K/giphy.gif)
 
 -	3D izometrik görünüm
 - Çok oyunculu (Multiplayer)
