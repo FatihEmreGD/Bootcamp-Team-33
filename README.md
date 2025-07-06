@@ -89,8 +89,6 @@ ChefSoul, bu beş karakterin rastlantı gibi görünen karşılaşmalarının, a
 - **Sprint Review**:
   - Sprint'e planlanan tarihten geç başlanmasına rağmen ekip, kısa sürede etkili bir şekilde organize olmuş ve yüksek bir eforla çalışmıştır. Özellikle oyunun oynanabilirliğini doğrudan etkileyen bazı kritik görevler başarıyla tamamlanmıştır.
   - Karakterlerin temel hareket animasyonları (idle ve yürüyüş) ve hareket kontrol sistemi, oyunun temel oynanış hissini sağlamlaştırmıştır.
-  - Restoran içi ve dışı sahneler, oyunun atmosferini oluşturma açısından önemli bir temel sunmuştur.
-  - Mutfak cihazlarının etkileşimli hale getirilmesi, interaktif yapıyı destekleyerek ilerleyen aşamalardaki oyun mekaniklerinin önünü açmıştır.
   - Oyuncu kamerasının ayarlanması ve giriş ekranı tasarımı, kullanıcı deneyiminin temel taşlarını oluşturarak oyunun ilk izlenimini iyileştirmiştir.
   - Ayrıca hikâye kısmının tasarlanması, oyun temasının ve anlatısının oturmasına yardımcı olmuştur. Bu görevlerin tamamlanması, sprint sonunda planlanan puan hedefini büyük oranda karşıladı ve bir sonraki sprint için sağlam bir teknik ve görsel altyapı oluşturdu.
   - Sprint Review katılımcıları: Nurşah Vayvalakyan, Eren Çivril, Fatih Emre, Ayşe Sena Yengin.
