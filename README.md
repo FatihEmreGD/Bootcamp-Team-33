@@ -75,9 +75,10 @@ ChefSoul, bu beş karakterin rastlantı gibi görünen karşılaşmalarının, a
 
 - **Daily Scrum**: Sprint başlangıcında günlük iletişim, ekip içi gelişmeleri hızlı şekilde paylaşmak amacıyla WhatsApp üzerinden sağlanacak şekilde planlanmıştır. Ayrıca her üç günde bir Slack üzerinden çevrim içi toplantılar yapılarak sprintin ilerleyişi, karşılaşılan sorunlar ve görev güncellemeleri değerlendirileceği kararlaştırılmıştır. Ancak bu plana sprint süresince tam anlamıyla uyulamadı; günlük iletişim ağırlıklı olarak ihtiyaç anlarında gerçekleşti, Slack toplantıları ise belirlenen düzende yapılamadı. Bu durum, görevlerin aksamalara neden olmuştur.Toplantı notları ve iletişim kayıtları burada arşivlenmiştir.:[Daily Scrum Konuşmalar ve Toplantı Notları](https://imgur.com/a/2U38l1b)
   
-- **Sprint board update**: Sprint board screenshot: 
-![s1](https://github.com/user-attachments/assets/8a8a591c-a59f-48d3-a8e6-5cdddeead56f)
-![s2](https://github.com/user-attachments/assets/3830ddb2-dcbd-407a-a10c-f61dc6a618c0)
+- **Sprint board update**: Sprint board screenshot:
+![s1](https://github.com/user-attachments/assets/7128bc51-b590-4a92-9a69-81bedb5e9f35)
+![s2](https://github.com/user-attachments/assets/1c2f363f-f1b3-4b46-9f5f-f9fef11c90b1)
+
 
 <details> <summary><h3>Ürün Durumu: Ekran Görüntüleri</h3></summary>
   
