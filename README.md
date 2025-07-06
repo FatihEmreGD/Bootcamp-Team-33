@@ -88,7 +88,11 @@ ChefSoul, bu beş karakterin rastlantı gibi görünen karşılaşmalarının, a
 
 
 - **Sprint Review**:
-   - Sprint 1'e geç başlanmasına rağmen ekip yüksek motivasyonla çalışarak görevlerin büyük kısmını başarıyla tamamlamıştır. Özellikle kodlama tarafında kullanıcı etkileşimini destekleyen sistemler üzerinde yoğunlaşılmıştır. Görevler backlog sırasına ve önceliklendirme kriterlerine göre seçilmiş; her birinin user story ve kabul kriterleri tanımlanarak anlaşılır hâle getirilmiştir.
+   - Sprint 1 süreci, planlanan tarihten geç başlansa da ekip yoğun bir eforla çalışarak büyük ölçüde verimli bir sonuç elde etmiştir. Bu sprintin ana hedefi, oyunun temel oynanabilirliğini oluşturacak yapı taşlarını hazırlamaktı. Bu doğrultuda, karakter kontrol sistemleri, sahne tasarımı, sipariş işleyişi ve temel kullanıcı arayüzü gibi mekanikler önceliklendirilmiş ve başarıyla tamamlanmıştır.
+  - Bu süreçte oyuncunun restoran ortamında serbestçe hareket edebilmesini sağlayan kontrol sistemleri geliştirilmiş, karakterlere ait temel animasyonlar entegre edilmiştir. Aynı zamanda restoranın iç ve dış mekânlarına ait sahneler hazırlanmış, mutfak ekipmanlarıyla etkileşim kurulabilir hâle getirilmiş ve oyun akışını yönlendirecek sipariş ve seviye sistemleri kod olarak yazılmıştır. Giriş ekranı tasarımı da bu sprintte yapılmıştır.
+  - Sprint puanlama sistemine göre, hedeflenen 100 puanlık toplam görev havuzunun 90 puanı başarıyla tamamlanmıştır. Geriye kalan 10 puanlık mutfak ses efekti görevi ise, iş yükü dengesi gözetilerek Sprint 2’ye aktarılmıştır.
+  - Sprint sürecinde iletişim planı tam anlamıyla uygulanamamıştır. Başlangıçta günlük WhatsApp bilgilendirmeleri ve her üç günde bir Slack toplantısı yapılması planlanmıştır. Ancak bu sistem sürdürülebilir olamamış, iletişim daha çok acil durumlara yönelik bireysel mesajlaşmalar üzerinden yürütülmüştür. Buna rağmen ekip üyeleri kendi görevlerinde yüksek sorumluluk bilinciyle ilerlemiş, belirlenen hedefe büyük ölçüde ulaşılmıştır.
+  - Genel olarak Sprint 1, ChefSoul oyununun temel iskeletini ortaya koyan; oynanabilirlik, mekanik yapı ve sahneleme açısından kritik adımların tamamlandığı bir dönem olmuştur. Eksik kalan görevler Sprint 2’ye aktarılmış, iletişim ve toplantı düzeni konusunda daha sürdürülebilir bir yapı hedeflenmiştir.
   - Sprint Review katılımcıları: Nurşah Vayvalakyan, Eren Çivril, Fatih Emre, Ayşe Sena Yengin.
     
 - **Sprint Retrospective:**
