@@ -25,7 +25,7 @@
 
 ## Oyun Açıklaması
 
-ChefTails 3D izometrik görünüme sahip, karakter odaklı bir mobil yemek simülasyon oyunudur. Oyuncular, Vellora adlı şehirde gizli bir restoran olan "The Hidden Pan"i işletirken, farklı geçmişlere sahip beş benzersiz şefin hikâyelerini keşfeder. Oyunda her şef farklı yemek türlerinde uzmanlaşmıştır. Oyuncular restoranı yönetir, siparişleri hazırlar, müşterilere servis yapar ve restoranı geliştirerek yeni şefleri açar.
+ChefSoul 3D izometrik görünüme sahip, karakter odaklı bir mobil yemek simülasyon oyunudur. Oyuncular, Vellora adlı şehirde gizli bir restoran olan "The Hidden Pan"i işletirken, farklı geçmişlere sahip beş benzersiz şefin hikâyelerini keşfeder. Oyunda her şef farklı yemek türlerinde uzmanlaşmıştır. Oyuncular restoranı yönetir, siparişleri hazırlar, müşterilere servis yapar ve restoranı geliştirerek yeni şefleri açar.
 
 ## Oyun Hikayesi
 
