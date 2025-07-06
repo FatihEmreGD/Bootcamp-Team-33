@@ -11,9 +11,9 @@
 | Name | Title | Socials |
 |------|-------|---------|
 | **Nurşah Vayvalakyan** | Scrum Master | [<img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="20"/>](https://www.linkedin.com/in/nur%C5%9Fah-vayvalakyan/) |
-| **Fatih Emre** | Product Owner | [<img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="20"/>](https://www.linkedin.com/in/fatih-emre) |
-| **Eren Çivril** | Developer | [<img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="20"/>](https://www.linkedin.com/in/eren-civril) |
-| **Ayşe Sena Yengin** | Developer | [<img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="20"/>](https://www.linkedin.com/in/ayse-sena-yengin) |
+| **Fatih Emre** | Product Owner | [<img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="20"/>](https://www.linkedin.com/in/fatih-emre-56572221a/) |
+| **Eren Çivril** | Developer | [<img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="20"/>](https://www.linkedin.com/in/eren-civril/) |
+| **Ayşe Sena Yengin** | Developer | [<img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="20"/>](https://www.linkedin.com/in/ay%C5%9Fe-sena-yengin-59a413291/) |
 
 ## Oyun İsmi
 
