@@ -115,4 +115,6 @@ ChefSoul, bu beş karakterin rastlantı gibi görünen karşılaşmalarının, a
   - **Toplantı Disiplini:** Her gün 15–20 dakikalık kısa toplantılar yapılması hedeflenmektedir. Ayrıca hafta sonunda tüm ekip üyelerinin katılımıyla daha kapsamlı bir toplantı gerçekleştirilecek; oyunla ilgili genel fikirler, gelişmeler ve karşılaşılan sorunlar birlikte değerlendirilecektir. Bu toplantılar sırasında görevlerin ilerleme durumu izlenecek ve gerekli aksiyonlar zamanında alınacaktır.
   - **Günlük Rapor Alışkanlığı:** Her ekip üyesinden günlük olarak hangi görevde olduğu, ilerleme düzeyi ve ihtiyaç duyduğu destek hakkında kısa bir bilgi vermesi beklenmektedir.
   - Bu değerlendirmeler doğrultusunda, Sprint 2’de daha sürdürülebilir ve organize bir iş akışı kurulması amaçlanmaktadır.
-
+  - Oyun kısmı için de tecrübe ve seviye sistemi teknik açıdan temellendirilmiştir. Ancak oyun tasarımı tamamlanmadığı için oyuncunun şu an puan kazanabileceği bir sistem bulunmamaktadır. Bu nedenle deneyim puanı kazanımı ve seviye atlama ödülleri gibi mekanizmalar aktif değildir.
+  - Benzer şekilde, sipariş oluşturma sisteminin temel yapısı geliştirilmiş olup; yemek verilerinin oyuna eklenmesiyle birlikte bu sistem de işlevsel hâle gelecektir.
+  - Tüm bu eksiklikler ve tamamlanmamış sistemler, Sprint 2 sürecinde önceliklendirilerek detaylı bir şekilde planlanacaktır. Bu doğrultuda, seviye-ödül dengesi, puan sistemi ve sipariş mekanizmasının eksiksiz bir oynanış deneyimi sunacak şekilde tamamlanması hedeflenmektedir.
