@@ -25,7 +25,7 @@
 
 ## Oyun Açıklaması
 
-ChefTails" 3D izometrik görünüme sahip, karakter odaklı bir mobil yemek simülasyon oyunudur. Oyuncular, Vellora adlı şehirde gizli bir restoran olan "The Hidden Pan"i işletirken, farklı geçmişlere sahip beş benzersiz şefin hikâyelerini keşfeder. Oyunda her şef farklı yemek türlerinde uzmanlaşmıştır. Oyuncular restoranı yönetir, siparişleri hazırlar, müşterilere servis yapar ve restoranı geliştirerek yeni şefleri açar.
+ChefTails 3D izometrik görünüme sahip, karakter odaklı bir mobil yemek simülasyon oyunudur. Oyuncular, Vellora adlı şehirde gizli bir restoran olan "The Hidden Pan"i işletirken, farklı geçmişlere sahip beş benzersiz şefin hikâyelerini keşfeder. Oyunda her şef farklı yemek türlerinde uzmanlaşmıştır. Oyuncular restoranı yönetir, siparişleri hazırlar, müşterilere servis yapar ve restoranı geliştirerek yeni şefleri açar.
 
 ## Oyun Hikayesi
 
@@ -69,7 +69,7 @@ ChefSoul, bu beş karakterin rastlantı gibi görünen karşılaşmalarının, a
 
 - **Sprint içinde tamamlanması tahmin edilen puan**: 100 puan olarak kararlaştırılmıştır.
 
-- **Puan tamamlama mantığı**: Oyun genelindeki görevlerin toplam puanı 300 olarak belirlenmiş; bu puan, her biri eşit ağırlıkta olacak şekilde 3 sprinte bölünmüştür. Sprint 1’de sistemin temel bileşenlerine öncelik verilerek görev seçimi bu yapıya uygun biçimde planlanmıştır. Görev puanlamaları, her bir görevin zorluk seviyesi ve tahmini iş gücüne göre belirlenmiş; sprint içindeki görevler arasında denge sağlanmasına özellikle dikkat edilmiştir.
+- **Puan tamamlama mantığı**: Oyun genelindeki görevlerin toplam puanı 300 olarak belirlenmiş; bu puan, her biri eşit ağırlıkta olacak şekilde 3 sprinte bölünmüştür. Sprint 1’de sistemin temel bileşenlerine öncelik verilerek görev seçimi bu yapıya uygun biçimde planlanmıştır. Görev puanlamaları, her bir görevin zorluk seviyesi ve tahmini iş gücüne göre belirlenmiş; sprint içindeki görevler arasında denge sağlanmasına özellikle dikkat edilmiştir. Hedefe ulaştık mı buraya ekle
 
 - **Backlog düzeni ve Story seçimleri**: Backlog, oyun içinde gerçekleştirilmesi gereken tüm görevleri kapsamaktadır. Görevler, sprint içerisindeki puan sınırını aşmayacak şekilde ve yapılması gereken sıraya göre düzenlenmiştir. Takip ve görev yönetimini kolaylaştırmak amacıyla her görev türüne göre renklendirilmiştir. Mavi renk tasarımı, bordo kodlamayı, mor ses tasarımını, sarı görsel efektleri ve açık yeşil türü belirsiz görevleri temsil etmektedir. Bu renk sistemi, görevlerin hızlıca ayırt edilmesini ve ekip içi iş bölümünün daha verimli bir şekilde yürütülmesi amaçlanmıştır. Bu sistem sayesinde görevlerin türü hızlıca ayırt edilebilir ve ekip içi iş bölümü daha verimli şekilde yürütülmesi amaçlanmıştır.
 
@@ -78,4 +78,31 @@ ChefSoul, bu beş karakterin rastlantı gibi görünen karşılaşmalarının, a
 - **Sprint board update**: Sprint board screenshot: 
 ![s1](https://github.com/user-attachments/assets/8a8a591c-a59f-48d3-a8e6-5cdddeead56f)
 ![s2](https://github.com/user-attachments/assets/3830ddb2-dcbd-407a-a10c-f61dc6a618c0)
+
+<details> <summary><h3>Ürün Durumu: Ekran Görüntüleri</h3></summary>
+  
+ 
+
+</details>
+
+
+- **Sprint Review**:
+  - Sprint'e planlanan tarihten geç başlanmasına rağmen ekip, kısa sürede etkili bir şekilde organize olmuş ve yüksek bir eforla çalışmıştır. Özellikle oyunun oynanabilirliğini doğrudan etkileyen bazı kritik görevler başarıyla tamamlanmıştır.
+  - Karakterlerin temel hareket animasyonları (idle ve yürüyüş) ve hareket kontrol sistemi, oyunun temel oynanış hissini sağlamlaştırmıştır.
+  - Restoran içi ve dışı sahneler, oyunun atmosferini oluşturma açısından önemli bir temel sunmuştur.
+  - Mutfak cihazlarının etkileşimli hale getirilmesi, interaktif yapıyı destekleyerek ilerleyen aşamalardaki oyun mekaniklerinin önünü açmıştır.
+  - Oyuncu kamerasının ayarlanması ve giriş ekranı tasarımı, kullanıcı deneyiminin temel taşlarını oluşturarak oyunun ilk izlenimini iyileştirmiştir.
+  - Ayrıca hikâye kısmının tasarlanması, oyun temasının ve anlatısının oturmasına yardımcı olmuştur. Bu görevlerin tamamlanması, sprint sonunda planlanan puan hedefini büyük oranda karşıladı ve bir sonraki sprint için sağlam bir teknik ve görsel altyapı oluşturdu.
+  - Sprint Review katılımcıları: Nurşah Vayvalakyan, Eren Çivril, Fatih Emre, Ayşe Sena Yengin.
+    
+- **Sprint Retrospective:**
+  - Sprint 1 başlangıcında, ekip içi iletişimin günlük olarak WhatsApp üzerinden sağlanması ve her 3 günde bir Slack üzerinden çevrim içi toplantı yapılması planlanmıştı. Ancak bu plana tam anlamıyla uyulamadı. Düzenli toplantılar gerçekleştirilmedi ve ekip üyeleri yalnızca acil durumlarda WhatsApp üzerinden haberleşti.
+
+  - **Sprint 2 için alınan aksiyonlar şunlardır:**
+  - **Görev Başlangıç-Bitiş Tarihleri:** Her görev için net başlangıç ve bitiş tarihleri belirlenecek ve sprint başında takıma duyurulacaktır.
+  - **Görev Dağılımı:** Sprint başlangıcında görevler her ekip üyesine eşit ve net şekilde atanacak, sorumluluk karışıklığı önlenecektir.
+  - **İletişim Takibi:** WhatsApp yalnızca acil durumlar için değil, günlük ilerlemeleri paylaşmak amacıyla da kullanılacaktır.
+  - **Toplantı Disiplini:** Her gün 15–20 dakikalık kısa toplantılar yapılması hedeflenmektedir. Ayrıca hafta sonunda tüm ekip üyelerinin katılımıyla daha kapsamlı bir toplantı gerçekleştirilecek; oyunla ilgili genel fikirler, gelişmeler ve karşılaşılan sorunlar birlikte değerlendirilecektir. Bu toplantılar sırasında görevlerin ilerleme durumu izlenecek ve gerekli aksiyonlar zamanında alınacaktır.
+  - **Günlük Rapor Alışkanlığı:** Her ekip üyesinden günlük olarak hangi görevde olduğu, ilerleme düzeyi ve ihtiyaç duyduğu destek hakkında kısa bir bilgi vermesi beklenmektedir.
+  - Bu değerlendirmeler doğrultusunda, Sprint 2’de daha sürdürülebilir ve organize bir iş akışı kurulması amaçlanmaktadır.
 
