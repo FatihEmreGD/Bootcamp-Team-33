@@ -69,7 +69,7 @@ ChefSoul, bu beş karakterin rastlantı gibi görünen karşılaşmalarının, a
 
 - **Sprint içinde tamamlanması tahmin edilen puan**: 100 puan olarak kararlaştırılmıştır.
 
-- **Puan tamamlama mantığı**: Oyun genelindeki görevlerin toplam puanı 300 olarak belirlenmiş; bu puan, her biri eşit ağırlıkta olacak şekilde 3 sprinte bölünmesi düşünülmüştür. Sprint 1’de sistemin temel bileşenlerine öncelik verilerek görev seçimi bu yapıya uygun biçimde planlanmıştır. Görev puanlamaları, her bir görevin zorluk seviyesi ve tahmini iş gücüne göre belirlenmiş; sprint içindeki görevler arasında denge sağlanmasına özellikle dikkat edilmiştir. Hedefe ulaştık mı buraya ekle
+- **Puan tamamlama mantığı**: Oyun genelindeki görevlerin toplam puanı 300 olarak belirlenmiş; bu puan, her biri eşit ağırlıkta olacak şekilde 3 sprinte bölünmesi düşünülmüştür. Sprint 1’de sistemin temel bileşenlerine öncelik verilerek görev seçimi bu yapıya uygun biçimde planlanmıştır. Görev puanlamaları, her bir görevin zorluk seviyesi ve tahmini iş gücüne göre belirlenmiş; sprint içindeki görevler arasında denge sağlanmasına özellikle dikkat edilmiştir.  
 
 - **Backlog düzeni ve Story seçimleri**: Backlog, oyun içinde gerçekleştirilmesi gereken tüm görevleri kapsamaktadır. Görevler, sprint içerisindeki puan sınırını aşmayacak şekilde ve yapılması gereken sıraya göre düzenlenmiştir. Takip ve görev yönetimini kolaylaştırmak amacıyla her görev türüne göre renklendirilmiştir: mavi tasarımı, bordo kodlamayı, mor ses tasarımını, sarı görsel efektleri ve açık yeşil türü belirsiz görevleri temsil etmektedir. Bu renk sistemi, görevlerin türüne göre hızlıca ayırt edilmesini ve ekip içi iş bölümünün daha verimli bir şekilde yürütülmesini amaçlamaktadır. Her bir backlog öğesi içerisinde ilgili user story'ler ve kabul kriterleri detaylı biçimde tanımlanmıştır. Bu sayede görevlerin amacı, kapsamı ve başarı koşulları daha net anlaşılmakta; ekip üyelerinin sorumlulukları çerçevesinde görevleri eksiksiz şekilde yerine getirmesi sağlanmaktadır.
 
@@ -88,11 +88,7 @@ ChefSoul, bu beş karakterin rastlantı gibi görünen karşılaşmalarının, a
 
 
 - **Sprint Review**:
-  - Sprint'e planlanan tarihten geç başlanmasına rağmen ekip, kısa sürede etkili bir şekilde organize olmuş ve yüksek bir eforla çalışmıştır. Özellikle oyunun oynanabilirliğini doğrudan etkileyen bazı kritik görevler başarıyla tamamlanmıştır.
-  - Karakterlerin temel hareket animasyonları (idle ve yürüyüş) ve hareket kontrol sistemi, oyunun temel oynanış hissini sağlamlaştırmıştır.
-  - Oyuncu kamerasının ayarlanması ve giriş ekranı tasarımı, kullanıcı deneyiminin temel taşlarını oluşturarak oyunun ilk izlenimini iyileştirmiştir.
-  - Ayrıca hikâye kısmının tasarlanması, oyun temasının ve anlatısının oturmasına yardımcı olmuştur.
-  - Bu görevlerin tamamlanması, sprint sonunda planlanan puan hedefini büyük oranda karşıladı ve bir sonraki sprint için sağlam bir teknik ve görsel altyapı oluşturdu.
+   - Sprint 1'e geç başlanmasına rağmen ekip yüksek motivasyonla çalışarak görevlerin büyük kısmını başarıyla tamamlamıştır. Özellikle kodlama tarafında kullanıcı etkileşimini destekleyen sistemler üzerinde yoğunlaşılmıştır. Görevler backlog sırasına ve önceliklendirme kriterlerine göre seçilmiş; her birinin user story ve kabul kriterleri tanımlanarak anlaşılır hâle getirilmiştir.
   - Sprint Review katılımcıları: Nurşah Vayvalakyan, Eren Çivril, Fatih Emre, Ayşe Sena Yengin.
     
 - **Sprint Retrospective:**
