@@ -1,36 +1,54 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class JoystickPlayerExample : MonoBehaviour
 {
     public float speed = 5f;
     public VariableJoystick variableJoystick;
+    public Transform cameraTransform; // 🎯 Kamerayı buraya bağlayacağız
+
     private Animator animator;
     private PlayerInteraction interaction;
+    private Rigidbody rb;
 
     void Start()
     {
         animator = GetComponent<Animator>();
         interaction = GetComponent<PlayerInteraction>();
+        rb = GetComponent<Rigidbody>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        Vector3 direction = Vector3.forward * variableJoystick.Vertical + Vector3.right * variableJoystick.Horizontal;
+        // 1️⃣ Joystick yönünü al
+        Vector2 input = new Vector2(variableJoystick.Horizontal, variableJoystick.Vertical);
+
+        // 2️⃣ Kamera yönüne göre dönüştür
+        Vector3 camForward = cameraTransform.forward;
+        Vector3 camRight = cameraTransform.right;
+
+        camForward.y = 0;
+        camRight.y = 0;
+
+        camForward.Normalize();
+        camRight.Normalize();
+
+        Vector3 direction = camForward * input.y + camRight * input.x;
 
         bool isMoving = direction.magnitude >= 0.1f;
         bool isCarrying = interaction != null && interaction.IsHoldingItem();
 
+        // 3️⃣ Animasyon
         animator.SetBool("isRunning", isMoving);
         animator.SetBool("isCarrying", isCarrying);
 
+        // 4️⃣ Hareket ettir
         if (isMoving)
         {
-            transform.Translate(direction.normalized * speed * Time.deltaTime, Space.World);
+            Vector3 move = direction.normalized * speed * Time.fixedDeltaTime;
+            rb.MovePosition(rb.position + move);
 
-            Quaternion toRotation = Quaternion.LookRotation(direction);
-            transform.rotation = Quaternion.Slerp(transform.rotation, toRotation, Time.deltaTime * 10f);
+            Quaternion targetRotation = Quaternion.LookRotation(direction);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.fixedDeltaTime * 10f);
         }
     }
 }
