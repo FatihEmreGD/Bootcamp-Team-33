@@ -9,19 +9,20 @@ public class UIController : MonoBehaviour
     {
         if (actionButton != null && playerInteraction != null)
         {
-            actionButton.SetActive(playerInteraction.activeTable != null);
+            // actionButton'ı, oyuncu etkileşime geçilebilir bir nesneye yakınsa aktif et
+            actionButton.SetActive(playerInteraction.GetClosestInteractable() != null);
         }
     }
 
     public void OnUniversalButtonClick()
     {
-        if (playerInteraction != null && playerInteraction.activeTable != null)
+        if (playerInteraction != null)
         {
-            playerInteraction.activeTable.OnUIClick();
+            playerInteraction.Interact(); // Doğrudan PlayerInteraction'ın Interact metodunu çağır
         }
         else
         {
-            Debug.Log("Hi�bir masaya yak�n de�ilsin.");
+            Debug.Log("PlayerInteraction referansı ayarlanmamış.");
         }
     }
 }
