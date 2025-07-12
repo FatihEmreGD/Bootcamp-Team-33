@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 317e48efa77d0a64a865bbc1af3e91b3, type: 3}
-  m_Name: Meat_Ingredient
+  m_Name: Broccoli_Ingredient
   m_EditorClassIdentifier: 
-  ingredientName: Meat
-  icon: {fileID: 0}
+  ingredientName: Broccoli
+  icon: {fileID: 21300000, guid: 63f0dbad7bd832244969061127d6dae4, type: 3}

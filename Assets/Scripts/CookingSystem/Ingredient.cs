@@ -1,8 +1,33 @@
+using UnityEditor;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Ingredient", menuName = "Cooking/Ingredient")]
-public class Ingredient : ScriptableObject
+[InitializeOnLoad]
+public static class FolderIconSetter
 {
-    public string ingredientName = "New Ingredient";
-    public Sprite icon;
+    static FolderIconSetter()
+    {
+        EditorApplication.projectWindowItemOnGUI += OnProjectWindowItemGUI;
+    }
+
+    static void OnProjectWindowItemGUI(string guid, Rect rect)
+    {
+        string path = AssetDatabase.GUIDToAssetPath(guid);
+
+        // Sadece klasörler için çalýþsýn
+        if (AssetDatabase.IsValidFolder(path))
+        {
+            // Klasör yolu buraya eþitse simgeyi göster
+            if (path == "Assets/CookingSystem/ScriptableObjects/Ingredients")
+            {
+                // PNG simge yolu (örnek olarak 'carrot.png' kullanýldý)
+                Texture icon = AssetDatabase.LoadAssetAtPath<Texture>("Assets/ingredient_png/carrot.png");
+
+                if (icon != null)
+                {
+                    GUI.DrawTexture(new Rect(rect.x, rect.y, 16, 16), icon);
+                }
+            }
+        }
+    }
 }
+
