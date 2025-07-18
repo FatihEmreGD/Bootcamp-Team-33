@@ -25,13 +25,16 @@
 
 ## Oyun Açıklaması
 
-ChefSoul 3D izometrik görünüme sahip, karakter odaklı bir mobil yemek simülasyon oyunudur. Oyuncular, Vellora adlı şehirde gizli bir restoran olan "The Hidden Pan"i işletirken, farklı geçmişlere sahip beş benzersiz şefin hikâyelerini keşfeder. Oyunda her şef farklı yemek türlerinde uzmanlaşmıştır. Oyuncular restoranı yönetir, siparişleri hazırlar, müşterilere servis yapar ve restoranı geliştirerek yeni şefleri açar.
+ChefSoul, 3D izometrik görünüme sahip, üç oyuncunun birlikte yönettiği karakter odaklı bir yemek simülasyonu oyunudur. Oyuncular; terk edilmiş bir restoran olan The Hidden Pan’i yeniden hayata döndürmek için aşçı, garson ve komi rollerini üstlenir. Sipariş hazırlama ve zaman yönetimi gibi mekaniklerin yanı sıra, her günün başında ve sonunda karakterler arasında geçen diyaloglarla birlikte, kişisel geçmişler yavaş yavaş açığa çıkar. ChefSoul, iş birliğine dayalı bir oynanışı, anlatı odaklı bir deneyimle birleştirir.
 
 ## Oyun Hikayesi
 
 ChefSoul, terk edilmiş bir restoranın yeniden açılmasıyla başlayan, üç karakterin yollarının kesiştiği çok oyunculu bir yemek simülasyonu oyunudur.
+
 Oyun, bir zamanlar gastronomi dünyasında ün kazanmış fakat uzun süredir kapalı olan The Hidden Pan adlı restoranın, Vellora şehrinin arka sokaklarında sessizce yeniden açılmasıyla başlar. Bu kapı, geçmişleri bambaşka, yolları kesişmemiş üç yabancıyı bir araya getirir.
-Sessizliğiyle dikkat çeken aşçı Silas, geçmişindeki hataları unutmak için mutfağa sığınmıştır. Konuşmaz; onun dili, ocaktaki alevdir. Garson Theo, her an sahnede gibi davranan, enerjisiyle dikkat çeken teatral bir karakterdir. Müşterilerle her etkileşimi küçük bir gösteriye dönüşür. Komi Dalia ise cilveli, şakacı ve içten tavırlarıyla mutfağın enerjisini yüksek tutar; bulaşık yıkarken bile etrafına neşe saçar.
+
+Sessizliğiyle dikkat çeken aşçı Silas, geçmişindeki hataları unutmak için mutfağa sığınmıştır. Konuşmaz; onun dili, ocaktaki alevdir. Garson Theo, her an sahnede gibi davranan, enerjisiyle dikkat çeken teatral bir karakterdir. Komi Dalia ise cilveli, şakacı ve içten tavırlarıyla mutfağın enerjisini yüksek tutar; bulaşık yıkarken bile etrafına neşe saçar.
+
 Her günün başında ve sonunda karakterler arasında gerçekleşen diyaloglarla birlikte, bu üçlünün geçmişleri yavaş yavaş açığa çıkar. ChefSoul, yalnızca takım koordinasyonu ve zaman yönetimi gerektiren bir restoran simülasyonu değil; aynı zamanda karakterler arası bağların geliştiği duygusal bir yolculuktur. Oyuncular, The Hidden Pan’i birlikte geliştirirken; her servis, karakterlerin iç dünyasına atılan yeni bir adım olur.
 
 
@@ -118,3 +121,33 @@ Her günün başında ve sonunda karakterler arasında gerçekleşen diyaloglarl
   - Oyun kısmı için de tecrübe ve seviye sistemi teknik açıdan temellendirilmiştir. Ancak oyun tasarımı tamamlanmadığı için oyuncunun şu an puan kazanabileceği bir sistem bulunmamaktadır. Bu nedenle deneyim puanı kazanımı ve seviye atlama ödülleri gibi mekanizmalar aktif değildir.
   - Benzer şekilde, sipariş oluşturma sisteminin temel yapısı geliştirilmiş olup; yemek verilerinin oyuna eklenmesiyle birlikte bu sistem de işlevsel hâle gelecektir.
   - Tüm bu eksiklikler ve tamamlanmamış sistemler, Sprint 2 sürecinde önceliklendirilerek detaylı bir şekilde planlanacaktır. Bu doğrultuda, seviye-ödül dengesi, puan sistemi ve sipariş mekanizmasının eksiksiz bir oynanış deneyimi sunacak şekilde tamamlanması hedeflenmektedir.
+
+
+# Sprint 2
+
+- **Sprint Notları**: 
+
+- **Sprint içinde tamamlanması tahmin edilen puan**: 100 puan olarak kararlaştırılmıştır.
+
+- **Puan tamamlama mantığı**: 
+
+- **Backlog düzeni ve Story seçimleri**: Backlog, oyun içinde gerçekleştirilmesi gereken tüm görevleri kapsamaktadır. Görevler, sprint içerisindeki puan sınırını aşmayacak şekilde ve yapılması gereken sıraya göre düzenlenmiştir. Takip ve görev yönetimini kolaylaştırmak amacıyla her görev türüne göre renklendirilmiştir: mavi tasarımı, bordo kodlamayı, mor ses tasarımını, sarı görsel efektleri ve açık yeşil türü belirsiz görevleri temsil etmektedir. Bu renk sistemi, görevlerin türüne göre hızlıca ayırt edilmesini ve ekip içi iş bölümünün daha verimli bir şekilde yürütülmesini amaçlamaktadır. Her bir backlog öğesi içerisinde ilgili user story'ler ve kabul kriterleri detaylı biçimde tanımlanmıştır. Bu sayede görevlerin amacı, kapsamı ve başarı koşulları daha net anlaşılmakta; ekip üyelerinin sorumlulukları çerçevesinde görevleri eksiksiz şekilde yerine getirmesi sağlanmaktadır.
+
+- **Daily Scrum**: Sprint başlangıcında günlük iletişim, ekip içi gelişmeleri hızlı şekilde paylaşmak amacıyla WhatsApp üzerinden ya da çevrim içi toplantılar ile sağlanacak şekilde planlanmıştır. Ayrıca her hafta sonu Slack üzerinden çevrim içi toplantılar yapılarak sprintin ilerleyişi, karşılaşılan sorunlar ve görev güncellemeleri değerlendirileceği kararlaştırılmıştır. Toplantı notları ve iletişim kayıtları burada arşivlenmiştir.:[Daily Scrum Konuşmalar ve Toplantı Notları](https://imgur.com/a/2U38l1b)
+  
+- **Sprint board update**: Sprint board screenshot:
+
+
+<details> <summary><h3>Ürün Durumu: Ekran Görüntüleri</h3></summary>
+
+
+
+</details>
+
+
+- **Sprint Review**:
+  
+  - Sprint Review katılımcıları: Nurşah Vayvalakyan, Eren Çivril, Fatih Emre, Ayşe Sena Yengin.
+    
+- **Sprint Retrospective:**
+  
