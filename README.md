@@ -127,13 +127,13 @@ Her günün başında ve sonunda karakterler arasında gerçekleşen diyaloglarl
 
 - **Sprint Notları**: 
 
-- **Sprint içinde tamamlanması tahmin edilen puan**: 100 puan olarak kararlaştırılmıştır.
+- **Sprint içinde tamamlanması tahmin edilen puan**:  puan olarak kararlaştırılmıştır.
 
 - **Puan tamamlama mantığı**: 
 
 - **Backlog düzeni ve Story seçimleri**: Backlog, oyun içinde gerçekleştirilmesi gereken tüm görevleri kapsamaktadır. Görevler, sprint içerisindeki puan sınırını aşmayacak şekilde ve yapılması gereken sıraya göre düzenlenmiştir. Takip ve görev yönetimini kolaylaştırmak amacıyla her görev türüne göre renklendirilmiştir: mavi tasarımı, bordo kodlamayı, mor ses tasarımını, sarı görsel efektleri ve açık yeşil türü belirsiz görevleri temsil etmektedir. Bu renk sistemi, görevlerin türüne göre hızlıca ayırt edilmesini ve ekip içi iş bölümünün daha verimli bir şekilde yürütülmesini amaçlamaktadır. Her bir backlog öğesi içerisinde ilgili user story'ler ve kabul kriterleri detaylı biçimde tanımlanmıştır. Bu sayede görevlerin amacı, kapsamı ve başarı koşulları daha net anlaşılmakta; ekip üyelerinin sorumlulukları çerçevesinde görevleri eksiksiz şekilde yerine getirmesi sağlanmaktadır.
 
-- **Daily Scrum**: Sprint başlangıcında günlük iletişim, ekip içi gelişmeleri hızlı şekilde paylaşmak amacıyla WhatsApp üzerinden ya da çevrim içi toplantılar ile sağlanacak şekilde planlanmıştır. Ayrıca her hafta sonu Slack üzerinden çevrim içi toplantılar yapılarak sprintin ilerleyişi, karşılaşılan sorunlar ve görev güncellemeleri değerlendirileceği kararlaştırılmıştır. Toplantı notları ve iletişim kayıtları burada arşivlenmiştir.:[Daily Scrum Konuşmalar ve Toplantı Notları](https://imgur.com/a/Z1xaVDe)
+- **Daily Scrum**: Sprint başlangıcında günlük iletişim, ekip içi gelişmeleri hızlı şekilde paylaşmak amacıyla WhatsApp üzerinden ya da çevrim içi toplantılar ile sağlanacak şekilde planlanmıştır. Ayrıca her hafta sonu Slack üzerinden çevrimiçi toplantılar yapılarak sprintin ilerleyişi, karşılaşılan sorunlar ve görev güncellemeleri değerlendirileceği kararlaştırılmıştır. Toplantı notları ve iletişim kayıtları burada arşivlenmiştir.:[Daily Scrum Konuşmalar ve Toplantı Notları](https://imgur.com/a/Z1xaVDe)
   
 - **Sprint board update**: Sprint board screenshot:
 
