@@ -29,11 +29,11 @@ ChefSoul 3D izometrik görünüme sahip, karakter odaklı bir mobil yemek simül
 
 ## Oyun Hikayesi
 
-Vellora şehri, zamanında gastronomi dünyasının parlayan yıldızı olan ancak yıllar önce kapanan gizemli bir restoranın sessizce yeniden açılışına tanıklık etmektedir: The Hidden Pan.
+ChefSoul, terk edilmiş bir restoranın yeniden açılmasıyla başlayan, üç karakterin yollarının kesiştiği çok oyunculu bir yemek simülasyonu oyunudur.
+Oyun, bir zamanlar gastronomi dünyasında ün kazanmış fakat uzun süredir kapalı olan The Hidden Pan adlı restoranın, Vellora şehrinin arka sokaklarında sessizce yeniden açılmasıyla başlar. Bu kapı, geçmişleri bambaşka, yolları kesişmemiş üç yabancıyı bir araya getirir.
+Sessizliğiyle dikkat çeken aşçı Silas, geçmişindeki hataları unutmak için mutfağa sığınmıştır. Konuşmaz; onun dili, ocaktaki alevdir. Garson Theo, her an sahnede gibi davranan, enerjisiyle dikkat çeken teatral bir karakterdir. Müşterilerle her etkileşimi küçük bir gösteriye dönüşür. Komi Dalia ise cilveli, şakacı ve içten tavırlarıyla mutfağın enerjisini yüksek tutar; bulaşık yıkarken bile etrafına neşe saçar.
+Her günün başında ve sonunda karakterler arasında gerçekleşen diyaloglarla birlikte, bu üçlünün geçmişleri yavaş yavaş açığa çıkar. ChefSoul, yalnızca takım koordinasyonu ve zaman yönetimi gerektiren bir restoran simülasyonu değil; aynı zamanda karakterler arası bağların geliştiği duygusal bir yolculuktur. Oyuncular, The Hidden Pan’i birlikte geliştirirken; her servis, karakterlerin iç dünyasına atılan yeni bir adım olur.
 
-Bruno, eski bir dağ otelinde görev yapan, öfkesine yenik düşüp her şeyini geride bırakmış ödüllü bir şeftir. Sis, geçmişi devlet kayıtlarından silinmiş, yalnızca sessizce yemek pişirerek varlığını sürdüren gizemli bir figürdür. Lilly, yaptığı bir hata sonrası utançla şehri terk etmiş, ama içinde hâlâ büyük bir tutkuyu taşıyan genç bir çıraktır. Mimi, sahil kasabasındaki restoranını kaybettikten sonra neşesini korusa da güvenini yitirmiştir. Thollo ise bir kazadan sonra inzivaya çekilmiş, ancak yeniden mutfağa dönmeye hazır eski bir eğitmendir.
-
-ChefSoul, bu beş karakterin rastlantı gibi görünen karşılaşmalarının, aslında bir yeniden doğuşa dönüştüğü dokunaklı bir anlatı sunar. Oyuncu, The Hidden Pan’i adım adım geliştirirken hem restoranı büyütür hem de karakterlerin kişisel dönüşümlerine tanıklık eder. Her yeni gün, yalnızca siparişlerin değil, geçmişle hesaplaşmaların da servis edildiği bir deneyime dönüşür.
 
 ## Oyun Özellikleri
 
