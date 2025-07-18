@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20b75de625cb4e04fb746996989fa741, type: 3}
   m_Name: Grilled Turkey
   m_EditorClassIdentifier: 
-  requiredIngredients: []
+  requiredIngredients:
+  - {fileID: 11400000, guid: 37d1693b024f5054194b51b88d30012d, type: 2}
+  - {fileID: 11400000, guid: 3514176a90541e54881941ae3d50d1de, type: 2}
   cookingTime: 11
   burnTime: 18
-  cookedDishPrefab: {fileID: 0}
+  cookedDishPrefab: {fileID: 919132149155446097, guid: 7146f9aa622b0784296f11526880303f, type: 3}

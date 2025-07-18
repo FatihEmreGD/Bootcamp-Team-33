@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: Banana_Ingredient
   m_EditorClassIdentifier: 
   ingredientName: Banana
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 97ddc131ba8bab64d97bd76ab2628716, type: 3}
+  cookTime: 0
+  burnTime: 0

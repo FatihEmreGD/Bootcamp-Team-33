@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: Lettuce_Ingredient
   m_EditorClassIdentifier: 
   ingredientName: Lettuce
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: ece41311ed96575489551cbb8650eb61, type: 3}
+  cookTime: 0
+  burnTime: 0

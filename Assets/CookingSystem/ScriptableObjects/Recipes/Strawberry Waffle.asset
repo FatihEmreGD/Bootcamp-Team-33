@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20b75de625cb4e04fb746996989fa741, type: 3}
   m_Name: Strawberry Waffle
   m_EditorClassIdentifier: 
-  requiredIngredients: []
-  cookingTime: 13
+  requiredIngredients:
+  - {fileID: 11400000, guid: a48817eefbb91804aba713ac4dcca675, type: 2}
+  - {fileID: 11400000, guid: 56747a89d446dc74ba87f9513d9386fd, type: 2}
+  - {fileID: 11400000, guid: 6cefd24c23e296f4fa8ecbd3825ce935, type: 2}
+  cookingTime: 13.1
   burnTime: 21
   cookedDishPrefab: {fileID: 0}

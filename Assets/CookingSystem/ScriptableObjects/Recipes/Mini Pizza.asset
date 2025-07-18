@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20b75de625cb4e04fb746996989fa741, type: 3}
   m_Name: Mini Pizza
   m_EditorClassIdentifier: 
-  requiredIngredients: []
+  requiredIngredients:
+  - {fileID: 11400000, guid: f7eebc2d9cc61954885ee89a76f98fe8, type: 2}
+  - {fileID: 11400000, guid: 5ebdcc6d2dbd1c94ebe4694cd0b014dc, type: 2}
+  - {fileID: 11400000, guid: b1c2726bc27205a4e91cb937891c42b6, type: 2}
   cookingTime: 15
   burnTime: 25
   cookedDishPrefab: {fileID: 0}

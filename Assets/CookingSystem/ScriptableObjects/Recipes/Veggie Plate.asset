@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20b75de625cb4e04fb746996989fa741, type: 3}
   m_Name: Veggie Plate
   m_EditorClassIdentifier: 
-  requiredIngredients: []
+  requiredIngredients:
+  - {fileID: 11400000, guid: ae10324c553e0b74a994d3cb91ee2996, type: 2}
+  - {fileID: 11400000, guid: 8730af0213e6faa4f9a9f0d9f93e7630, type: 2}
+  - {fileID: 11400000, guid: 5d13894fa752c59429541b617ff4537b, type: 2}
   cookingTime: 10
   burnTime: 17
   cookedDishPrefab: {fileID: 0}
