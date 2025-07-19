@@ -125,17 +125,21 @@ Her günün başında ve sonunda karakterler arasında gerçekleşen diyaloglarl
 
 # Sprint 2
 
-- **Sprint Notları**: 
+- **Sprint Notları**: Sprint 2’nin temel hedefi, oyunun mekanik yapısını genişleterek sistemlerin birbirine entegre edilmesini sağlamaktır. Bu kapsamda, karakter sınıflarının oluşturulması, yemek pişirme ve sipariş sistemlerinin temelinin geliştirilmesi, kullanıcı arayüzlerinin detaylandırılması ve ses efektlerinin oyuna entegre edilmesi amaçlanmıştır. Böylece, oyuncunun temel döngüyü deneyimleyebileceği ilk bütünlüklü sürümün altyapısı oluşturulmuştur.
+Sprint 2 kapsamında ekip olarak 110 puanlık bir iş yükü hedeflenmiştir. Görevler, oyunun temel fonksiyonlarının birbirine bağlanmasını sağlayacak şekilde seçilmiş; görevler arası puan dengesi korunarak dağıtılmıştır. Ayrıca, bir önceki sprintte belirlenen yapının üzerine inşa edilen sistemler sayesinde, oyun içi etkileşimlerin ve kullanıcı deneyiminin daha derinleştirilmesi sağlanmıştır.
 
-- **Sprint içinde tamamlanması tahmin edilen puan**:  puan olarak kararlaştırılmıştır.
+- **Sprint içinde tamamlanması tahmin edilen puan**: 10 puanlık mutfak ses efekti görevinin iş yükü dengesi gözetilerek Sprint 2’ye aktarılması sonucunda sprint 110 puan olarak kararlaştırılmıştır.
 
-- **Puan tamamlama mantığı**: 
+- **Puan tamamlama mantığı**: Oyun genelindeki görevlerin toplam puanı 300 olarak belirlenmiş; bu puan, her biri eşit ağırlıkta olacak şekilde 3 sprinte bölünmesi düşünülmüştür. Görev puanlamaları, her bir görevin zorluk seviyesi ve tahmini iş gücüne göre belirlenmiş; sprint içindeki görevler arasında denge sağlanmasına özellikle dikkat edilmiştir. Sprintin iki haftalık olması sebebiyle görevler parçalanarak daha fazla maddeye bölünmüş ve sprint görünümünde daha çok görev yer almıştır. Bu durum, daha fazla görev yapılmış izlenimi yaratsa da her görevin puanı küçük tutulduğu için toplam hedef değişmemiştir.
 
 - **Backlog düzeni ve Story seçimleri**: Backlog, oyun içinde gerçekleştirilmesi gereken tüm görevleri kapsamaktadır. Görevler, sprint içerisindeki puan sınırını aşmayacak şekilde ve yapılması gereken sıraya göre düzenlenmiştir. Takip ve görev yönetimini kolaylaştırmak amacıyla her görev türüne göre renklendirilmiştir: mavi tasarımı, bordo kodlamayı, mor ses tasarımını, sarı görsel efektleri ve açık yeşil türü belirsiz görevleri temsil etmektedir. Bu renk sistemi, görevlerin türüne göre hızlıca ayırt edilmesini ve ekip içi iş bölümünün daha verimli bir şekilde yürütülmesini amaçlamaktadır. Her bir backlog öğesi içerisinde ilgili user story'ler ve kabul kriterleri detaylı biçimde tanımlanmıştır. Bu sayede görevlerin amacı, kapsamı ve başarı koşulları daha net anlaşılmakta; ekip üyelerinin sorumlulukları çerçevesinde görevleri eksiksiz şekilde yerine getirmesi sağlanmaktadır.
 
 - **Daily Scrum**: Sprint başlangıcında günlük iletişim, ekip içi gelişmeleri hızlı şekilde paylaşmak amacıyla WhatsApp üzerinden ya da çevrim içi toplantılar ile sağlanacak şekilde planlanmıştır. Ayrıca her hafta sonu Slack üzerinden çevrimiçi toplantılar yapılarak sprintin ilerleyişi, karşılaşılan sorunlar ve görev güncellemeleri değerlendirileceği kararlaştırılmıştır. Toplantı notları ve iletişim kayıtları burada arşivlenmiştir.:[Daily Scrum Konuşmalar ve Toplantı Notları](https://imgur.com/a/Z1xaVDe)
   
 - **Sprint board update**: Sprint board screenshot:
+![s1](https://github.com/user-attachments/assets/1a7991f3-397a-436b-bf37-f2d97e250078)
+![s2](https://github.com/user-attachments/assets/eb2c42f2-ad21-469e-ba2a-8631de98497f)
+Not: Ekibin geneli cumartesi pazar oyun için çalışma vakti ayırabildiğinden ve bir ekip arkadaşımızın bu hafta yoğunlukları olması sebebiyle sprint bu şekildedir. Hedefimiz cumartesi ve pazar bu eksikleri tamamlamak. Teknik olarak, bu sprintte farklı sistemler arası geçişlerin sağlıklı şekilde bağlanması gerektiği için de ekip testleri yaparak ve sistemi bütüncül hale getirecektir. Ürün durumu da bu şekilde güncellenecektir.
 
 
 <details> <summary><h3>Ürün Durumu: Ekran Görüntüleri</h3></summary>
