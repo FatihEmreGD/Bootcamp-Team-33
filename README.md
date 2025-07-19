@@ -176,16 +176,16 @@ Sprint başında belirlenen hedef puan 110’du. Ancak sprint sonuna geldiğimiz
   
   - **Sprint sonunda gözlemlenen bazı önemli noktalar şunlardır:**
   
-  -Takım içi iletişim ve görev takibi önceki sprintlere göre daha iyiydi.
+  - Takım içi iletişim ve görev takibi önceki sprintlere göre daha iyiydi.
   - Görevlerin büyük kısmı tamamlandı, ancak kalan görevler In Progress durumunda kaldı.
   - Bazı sistemler tamamlandı fakat birlikte test edilip entegre edilmediği için oyunun genel işleyişine dair net bir izlenim edinilemedi.
     
   - **Sprint 3 için çıkarılan dersler ve alınacak aksiyonlar:**
     
-Sprint 3, hem entegrasyon hem hata ayıklama hem de son ses–görsel detayların tamamlandığı sprint olmalı.
-Bu sprintte sadece yeni görevler değil, Sprint 2’nin çıktılarının birlikte çalışabilirliği ve işleyişi de test edilmeli.
-Görevlerin bitiş tarihlerine tam uyum sağlanmalı ve teslimlerde gecikme yaşanmamalı.
-Sprint 3 backlog’u, Sprint 2'nin sonunda yapılan değerlendirmelere göre yeniden şekillendirilmeli.
-Son sprint olması nedeniyle ekip olarak daha fazla efor ve odakla çalışılmalı.
-Bu retrospektif ışığında, Sprint 3’ün en yüksek verimle tamamlanabilmesi için önceliklerin net olarak belirlenmesi ve tamamlanan sistemlerin entegre bir şekilde test edilmesi kritik önem taşımaktadır.
+  - Sprint 3, hem entegrasyon hem hata ayıklama hem de son ses–görsel detayların tamamlandığı sprint olmalı.
+  - Bu sprintte sadece yeni görevler değil, Sprint 2’nin çıktılarının birlikte çalışabilirliği ve işleyişi de test edilmeli.
+  - Görevlerin bitiş tarihlerine tam uyum sağlanmalı ve teslimlerde gecikme yaşanmamalı.
+  - Sprint 3 backlog’u, Sprint 2'nin sonunda yapılan değerlendirmelere göre yeniden şekillendirilmeli.
+  - Son sprint olması nedeniyle ekip olarak daha fazla efor ve odakla çalışılmalı.
+  - Bu retrospektif ışığında, Sprint 3’ün en yüksek verimle tamamlanabilmesi için önceliklerin net olarak belirlenmesi ve tamamlanan sistemlerin entegre bir şekilde test edilmesi kritik önem taşımaktadır.
 
