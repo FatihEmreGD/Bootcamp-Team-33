@@ -14,3 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: Tomato
   icon: {fileID: 0}
+  cookTime: 0
+  burnTime: 0
+  ingredientPrefab: {fileID: 3822268493580405672, guid: e78638b2d3ad32a458b5ea305b2fccfe, type: 3}

@@ -7,4 +7,5 @@ public class Ingredient : ScriptableObject
     public Sprite icon;
     public float cookTime;
     public float burnTime;
+    public GameObject ingredientPrefab; // Malzemenin 3D prefab'ı
 }

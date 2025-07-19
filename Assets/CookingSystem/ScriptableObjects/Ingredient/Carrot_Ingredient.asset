@@ -14,3 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: Carrot
   icon: {fileID: 21300000, guid: d06c450252413d74fa610d1a9445da98, type: 3}
+  cookTime: 0
+  burnTime: 0
+  ingredientPrefab: {fileID: 5285600657527365669, guid: 62a6b3b888146464c8d26108b96e1a03, type: 3}

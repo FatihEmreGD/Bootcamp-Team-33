@@ -38,14 +38,14 @@ public class PlayerInteraction : MonoBehaviour
 
         closestInteractable = GetClosestInteractable();
 
-        if (closestInteractable != null)
-        {
-            Debug.Log("Closest Interactable: " + closestInteractable.name);
-        }
-        else
-        {
-            Debug.Log("No interactable in range.");
-        }
+        // if (closestInteractable != null)
+        // {
+        //     Debug.Log("Closest Interactable: " + closestInteractable.name);
+        // }
+        // else
+        // {
+        //     Debug.Log("No interactable in range.");
+        // }
     }
 
     public GameObject GetClosestInteractable()
@@ -62,12 +62,93 @@ public class PlayerInteraction : MonoBehaviour
 
     public void Interact()
     {
+        if (!canMove) return; // If player cannot move, do not allow new interactions
+
         Debug.Log($"PlayerInteraction: Interact called. IsHoldingItem: {IsHoldingItem()}");
         // Eğer elde bir eşya varsa, öncelik onu bırakmak veya kullanmaktır.
         if (IsHoldingItem())
         {
-            // Elinde malzeme varsa
+            // Declare variables once at the top of this scope
+            Pot heldPot = heldItem.GetComponent<Pot>();
+            Plate heldPlate = heldItem.GetComponent<Plate>();
             IngredientItem heldIngredient = heldItem.GetComponent<IngredientItem>();
+
+            // Bulaşık tezgahıyla etkileşim
+            DishwashingStation targetDishwashingStation = closestInteractable.GetComponent<DishwashingStation>();
+            if (targetDishwashingStation != null)
+            {
+                Debug.Log("PlayerInteraction: Interacting with Dishwashing Station.");
+                if (heldPot != null)
+                {
+                    if (heldPot.currentState == Pot.PotState.Dirty || heldPot.ingredientsInside.Count > 0 || heldPot.cookedDish != null)
+                    {
+                        StartCoroutine(targetDishwashingStation.StartWashing(heldItem, this));
+                        heldItem = null; // Item is now on the washing station
+                        return;
+                    }
+                    else
+                    {
+                        Debug.Log("PlayerInteraction: Pot is not dirty or has no contents.");
+                        return;
+                    }
+                }
+
+                if (heldPlate != null)
+                {
+                    if (heldPlate.currentState == Plate.PlateState.Dirty || !heldPlate.IsEmpty())
+                    {
+                        StartCoroutine(targetDishwashingStation.StartWashing(heldItem, this));
+                        heldItem = null; // Item is now on the washing station
+                        return;
+                    }
+                    else
+                    {
+                        Debug.Log("PlayerInteraction: Plate is not dirty or empty.");
+                        return;
+                    }
+                }
+
+                Debug.LogWarning("PlayerInteraction: Cannot wash this item.");
+                return;
+            }
+
+            // Çöp kutusuyla etkileşim
+            TrashCan targetTrashCan = closestInteractable.GetComponent<TrashCan>();
+            if (targetTrashCan != null)
+            {
+                Debug.Log("PlayerInteraction: Interacting with TrashCan.");
+                if (heldPot != null)
+                {
+                    heldPot.EmptyAndDirty();
+                    return;
+                }
+
+                if (heldPlate != null)
+                {
+                    if (!heldPlate.IsEmpty())
+                    {
+                        heldPlate.TakeDish(); // Take the dish, making the plate dirty
+                        Debug.Log("PlayerInteraction: Dish taken from plate. Plate is now dirty.");
+                    }
+                    else
+                    {
+                        Debug.Log("PlayerInteraction: Plate is already empty.");
+                    }
+                    return;
+                }
+
+                if (heldIngredient != null)
+                {
+                    Destroy(heldItem);
+                    heldItem = null;
+                    Debug.Log("PlayerInteraction: Ingredient trashed.");
+                    return;
+                }
+                Debug.LogWarning("PlayerInteraction: Cannot trash this item.");
+                return;
+            }
+
+            // Elinde malzeme varsa
             if (heldIngredient != null)
             {
                 Debug.Log($"PlayerInteraction: Holding ingredient: {heldIngredient.ingredient.ingredientName}");
@@ -139,12 +220,10 @@ public class PlayerInteraction : MonoBehaviour
                     if (targetTable != null)
                     {
                         Debug.Log("PlayerInteraction: Trying to place item on table.");
-                        bool placedOnTable = targetTable.TryPlaceItem(heldItem);
-                        if (placedOnTable)
+                        if (targetTable.TryPlaceItem(heldItem))
                         {
-                            Debug.Log("PlayerInteraction: Item placed on table. Destroying held item.");
-                            Destroy(heldItem); // FIX: Destroy held item after successful placement on table
-                            heldItem = null;
+                            Debug.Log("PlayerInteraction: Item placed on table.");
+                            heldItem = null; // Item is now on the table, so we are no longer holding it
                             return;
                         }
                         else
@@ -161,7 +240,6 @@ public class PlayerInteraction : MonoBehaviour
             }
 
             // Elinde tencere varsa
-            Pot heldPot = heldItem.GetComponent<Pot>();
             if (heldPot != null)
             {
                 Debug.Log($"PlayerInteraction: Holding pot: {heldPot.name}");
@@ -172,16 +250,18 @@ public class PlayerInteraction : MonoBehaviour
                     Stove targetStove = closestInteractable.GetComponent<Stove>();
                     if (targetStove != null)
                     {
-                        Debug.Log("PlayerInteraction: Trying to place pot on stove.");
+                        Debug.Log("PlayerInteraction: Trying to place pot on stove. Current heldItem: " + (heldItem != null ? heldItem.name : "NULL"));
                         if (targetStove.PlacePot(heldPot))
                         {
+                            Debug.Log("PlayerInteraction: Pot successfully placed on stove. Setting heldItem to null.");
+                            
                             heldItem = null;
-                            Debug.Log("PlayerInteraction: Pot placed on stove.");
+                            Debug.Log("PlayerInteraction: heldItem is now NULL.");
                             return;
                         }
                         else
                         {
-                            Debug.Log("PlayerInteraction: Failed to place pot on stove. Pot remains in hand.");
+                            Debug.Log("PlayerInteraction: Failed to place pot on stove. Pot remains in hand. Current heldItem: " + (heldItem != null ? heldItem.name : "NULL"));
                             return; // Pot remains in hand
                         }
                     }
@@ -210,6 +290,73 @@ public class PlayerInteraction : MonoBehaviour
                 return;
             }
 
+            // Elinde tabak varsa
+            if (heldPlate != null)
+            {
+                Debug.Log($"PlayerInteraction: Holding a plate.");
+                if (closestInteractable != null)
+                {
+                    ServingTable targetServingTable = closestInteractable.GetComponent<ServingTable>();
+                    if (targetServingTable != null)
+                    {
+                        if (targetServingTable.TryPlaceItem(heldItem))
+                        {
+                            heldItem = null;
+                            Debug.Log("PlayerInteraction: Plate placed on serving table.");
+                            return;
+                        }
+                        else
+                        {
+                            Debug.Log("PlayerInteraction: Failed to place plate on serving table.");
+                            return;
+                        }
+                    }
+
+                    Table targetTable = closestInteractable.GetComponent<Table>();
+                    if (targetTable != null)
+                    {
+                        if (targetTable.TryPlaceItem(heldItem))
+                        {
+                            heldItem = null;
+                            return;
+                        }
+                    }
+
+                    Stove targetStove = closestInteractable.GetComponent<Stove>();
+                    if (targetStove != null)
+                    {
+                        targetStove.TryServeFood(heldPlate);
+                        return;
+                    }
+
+                    Pot targetPot = closestInteractable.GetComponent<Pot>();
+                    if (targetPot != null)
+                    {
+                        if (targetPot.currentState == Pot.PotState.Cooked)
+                        {
+                            if (heldPlate.IsEmpty())
+                            {
+                                Recipe servedDish = targetPot.ServeDish();
+                                if (servedDish != null)
+                                {
+                                    heldPlate.TryPlaceDish(servedDish);
+                                    Debug.Log($"Served {servedDish.name} onto the plate.");
+                                }
+                            }
+                            else
+                            {
+                                Debug.LogWarning("Plate is not empty!");
+                            }
+                        }
+                        else
+                        {
+                            Debug.LogWarning("Pot is not cooked!");
+                        }
+                        return;
+                    }
+                }
+            }
+
             // Elinde başka bir eşya varsa ve bırakacak yer yoksa elde tut
             Debug.Log("PlayerInteraction: No valid place to put item. Item remains in hand.");
             return;
@@ -224,6 +371,14 @@ public class PlayerInteraction : MonoBehaviour
                 return;
             }
 
+            // Bulaşık tezgahıyla etkileşim
+            DishwashingStation targetDishwashingStation = closestInteractable.GetComponent<DishwashingStation>();
+            if (targetDishwashingStation != null)
+            {
+                Debug.Log("PlayerInteraction: Interacting with Dishwashing Station. Nothing to pick up.");
+                return;
+            }
+
             // Malzeme kaynağından almayı dene
             IngredientSource ingredientSource = closestInteractable.GetComponent<IngredientSource>();
             if (ingredientSource != null)
@@ -231,7 +386,7 @@ public class PlayerInteraction : MonoBehaviour
                 Ingredient ingredient = ingredientSource.TakeIngredient();
                 if (ingredient != null)
                 {
-                    GameObject newIngredientItemGO = Instantiate(ingredientItemPrefab);
+                    GameObject newIngredientItemGO = Instantiate(ingredient.ingredientPrefab);
                     IngredientItem newIngredientItem = newIngredientItemGO.GetComponent<IngredientItem>();
                     if (newIngredientItem != null)
                     {
@@ -282,6 +437,19 @@ public class PlayerInteraction : MonoBehaviour
                 return;
             }
 
+            // Servis masasından eşya almayı dene
+            ServingTable targetServingTable = closestInteractable.GetComponent<ServingTable>();
+            if (targetServingTable != null)
+            {
+                GameObject itemFromServingTable = targetServingTable.TryTakeItem();
+                if (itemFromServingTable != null)
+                {
+                    PickUpItem(itemFromServingTable);
+                    Debug.Log("PlayerInteraction: Item taken from serving table.");
+                }
+                return;
+            }
+
             Debug.Log("PlayerInteraction: Cannot interact with this object.");
         }
     }
@@ -312,6 +480,51 @@ public class PlayerInteraction : MonoBehaviour
     public bool IsHoldingItem()
     {
         return heldItem != null;
+    }
+
+    private bool canMove = true;
+    public JoystickPlayerExample playerMovementScript; // Reference to your player movement script
+    private bool _isWashingInterruptionRequested = false; // New flag for washing interruption
+
+    public void SetPlayerMovement(bool canMove)
+    {
+        this.canMove = canMove;
+        if (playerMovementScript != null)
+        {
+            playerMovementScript.enabled = canMove;
+        }
+        else
+        {
+            Debug.LogWarning("PlayerMovementScript reference is not set in PlayerInteraction.");
+        }
+        Debug.Log($"Player movement set to: {canMove}");
+    }
+
+    // This method will be called by the UI button
+    public void OnUniversalInteractionButtonPress()
+    {
+        Debug.Log("PlayerInteraction: Universal Interaction Button Pressed.");
+        if (!canMove) // If player is currently in a washing state (cannot move)
+        {
+            _isWashingInterruptionRequested = true; // Request interruption
+            Debug.Log("PlayerInteraction: Washing interruption requested.");
+        }
+        else
+        {
+            // If not in a washing state, proceed with normal interaction
+            Interact();
+        }
+    }
+
+    // Called by DishwashingStation to check if interruption is requested
+    public bool CheckWashingInterruptionRequest()
+    {
+        if (_isWashingInterruptionRequested)
+        {
+            _isWashingInterruptionRequested = false; // Reset the flag after checking
+            return true;
+        }
+        return false;
     }
 
     void OnDrawGizmosSelected()

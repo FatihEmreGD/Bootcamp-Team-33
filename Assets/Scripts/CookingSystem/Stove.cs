@@ -26,14 +26,12 @@ public class Stove : MonoBehaviour
         
         Debug.Log("Pot placed on stove.");
 
-        // Check if the pot was previously cooking and resume
         if (currentPot.wasCooking && currentPot.activeRecipe != null)
         {
-            // Verify if the ingredients still match the active recipe
             if (RecipeManager.Instance != null && RecipeManager.Instance.GetMatchingRecipe(currentPot.ingredientsInside) == currentPot.activeRecipe)
             {
                 currentRecipe = currentPot.activeRecipe;
-                StartCooking(currentPot.currentCookingProgress); // Resume cooking
+                StartCooking(currentPot.currentCookingProgress);
                 Debug.Log($"Resuming cooking for {currentRecipe.name} from {currentPot.currentCookingProgress:F2} seconds.");
             }
             else
@@ -44,7 +42,7 @@ public class Stove : MonoBehaviour
         }
         else
         {
-            CheckRecipeAndStartCookingPublic(); // Start new cooking check
+            CheckRecipeAndStartCookingPublic();
         }
         return true;
     }
@@ -59,7 +57,6 @@ public class Stove : MonoBehaviour
 
         Pot potToReturn = currentPot;
         
-        // Save cooking progress before removing
         if (cookingCoroutine != null)
         {
             StopCoroutine(cookingCoroutine);
@@ -78,11 +75,42 @@ public class Stove : MonoBehaviour
         currentPot = null;
         currentRecipe = null; // Clear current recipe for the stove
 
+        potToReturn.transform.SetParent(null); // Detach pot from stove
+
         Debug.Log("Pot removed from the stove.");
         return potToReturn;
     }
 
-    // Public method to be called from PlayerInteraction
+    public void TryServeFood(Plate plate)
+    {
+        if (IsOccupied && currentPot.currentState == Pot.PotState.Cooked)
+        {
+            if (plate.IsEmpty())
+            {
+                Recipe servedDish = currentPot.ServeDish();
+                if (servedDish != null)
+                {
+                    plate.TryPlaceDish(servedDish);
+                    Debug.Log($"Served {servedDish.name} onto the plate from the stove.");
+                    if (cookingCoroutine != null)
+                    {
+                        StopCoroutine(cookingCoroutine);
+                        cookingCoroutine = null;
+                        currentRecipe = null;
+                    }
+                }
+            }
+            else
+            {
+                Debug.LogWarning("Plate is not empty!");
+            }
+        }
+        else
+        {
+            Debug.LogWarning("Pot on stove is not cooked or stove is empty!");
+        }
+    }
+
     public void CheckRecipeAndStartCookingPublic()
     {
         Debug.Log("Stove: CheckRecipeAndStartCookingPublic called.");
@@ -110,17 +138,16 @@ public class Stove : MonoBehaviour
         if (foundRecipe != null)
         {
             currentRecipe = foundRecipe;
-            StartCooking(); // Start from beginning if new recipe or not previously cooking
+            StartCooking();
         }
         else
         {
             Debug.Log("Stove: No matching recipe found for the ingredients in the pot.");
-            // If no recipe found, ensure cooking is stopped
             if (cookingCoroutine != null)
             {
                 StopCoroutine(cookingCoroutine);
                 cookingCoroutine = null;
-                currentPot.currentState = Pot.PotState.HasIngredients; // Reset state
+                currentPot.currentState = Pot.PotState.HasIngredients;
                 currentPot.wasCooking = false;
                 currentPot.currentCookingProgress = 0f;
                 currentPot.activeRecipe = null;
@@ -146,32 +173,27 @@ public class Stove : MonoBehaviour
     private IEnumerator CookingProcess(float cookingTime, float burnTime, float startTime)
     {
         float timer = startTime;
-        // Cooking phase
         while (timer < cookingTime)
         {
             timer += Time.deltaTime;
-            currentPot.currentCookingProgress = timer; // Save current progress
-            // Update UI progress bar here
+            currentPot.currentCookingProgress = timer;
             Debug.Log($"Stove: Cooking progress: {timer / cookingTime * 100:F0}%");
             yield return null;
         }
 
-        currentPot.currentState = Pot.PotState.Cooked;
+        currentPot.SetCooked(currentRecipe);
         Debug.Log("Stove: Food is cooked!");
-        currentPot.currentCookingProgress = cookingTime; // Ensure it's at max
+        currentPot.currentCookingProgress = cookingTime;
 
-        // Burn phase
         float burnTimer = 0f;
         while (burnTimer < burnTime)
         {
             burnTimer += Time.deltaTime;
-            // Update UI progress bar here (e.g., change color to red)
             Debug.Log($"Stove: Burn progress: {burnTimer / burnTime * 100:F0}%");
             yield return null;
         }
 
         currentPot.currentState = Pot.PotState.Burnt;
         Debug.Log("Stove: Food is burnt!");
-        // Handle burnt food (e.g., visual change, cannot be served)
     }
 }

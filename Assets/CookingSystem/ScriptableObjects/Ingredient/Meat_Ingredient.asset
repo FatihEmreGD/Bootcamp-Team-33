@@ -14,3 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ingredientName: Meat
   icon: {fileID: 21300000, guid: f47b73b48fff208429ed913efb99f191, type: 3}
+  cookTime: 0
+  burnTime: 0
+  ingredientPrefab: {fileID: 8698262946841945127, guid: a60eef31a1ceaac489fa5f606450d2bc, type: 3}

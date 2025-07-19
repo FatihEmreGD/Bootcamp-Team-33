@@ -27,7 +27,26 @@ public class RecipeManager : MonoBehaviour
         // Check all recipes
         foreach (Recipe recipe in allRecipes)
         {
-            Debug.Log($"RecipeManager: Checking recipe: {recipe.name} (Required: {string.Join(", ", recipe.requiredIngredients.Select(i => i.ingredientName))})");
+            if (recipe == null) // Added null check for recipe itself
+            {
+                Debug.LogWarning("RecipeManager: Found a null recipe in allRecipes list. Skipping.");
+                continue;
+            }
+
+            // Safely get ingredient names for logging
+            string requiredIngredientsNames = "N/A";
+            if (recipe.requiredIngredients != null)
+            {
+                requiredIngredientsNames = string.Join(", ", recipe.requiredIngredients.Select(i => i != null ? i.ingredientName : "NULL"));
+            }
+            Debug.Log($"RecipeManager: Checking recipe: {recipe.name} (Required: {requiredIngredientsNames})");
+
+            // Check if requiredIngredients list is null or empty
+            if (recipe.requiredIngredients == null || recipe.requiredIngredients.Count == 0)
+            {
+                Debug.Log($"RecipeManager: Recipe {recipe.name} has no required ingredients or requiredIngredients list is null. Skipping.");
+                continue;
+            }
 
             // Check if ingredient counts match
             if (recipe.requiredIngredients.Count != ingredients.Count)
@@ -40,6 +59,13 @@ public class RecipeManager : MonoBehaviour
             bool allIngredientsMatch = true;
             foreach (Ingredient requiredIngredient in recipe.requiredIngredients)
             {
+                if (requiredIngredient == null) // Added null check for individual ingredient
+                {
+                    Debug.LogWarning($"RecipeManager: Found a null ingredient in recipe {recipe.name}. Skipping this recipe.");
+                    allIngredientsMatch = false;
+                    break;
+                }
+
                 if (!ingredients.Contains(requiredIngredient))
                 {
                     Debug.Log($"RecipeManager: Missing ingredient {requiredIngredient.ingredientName} for {recipe.name}.");

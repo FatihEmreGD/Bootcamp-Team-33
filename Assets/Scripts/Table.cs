@@ -5,87 +5,95 @@ public class Table : MonoBehaviour
     public Transform itemPoint;
     public GameObject currentItem;
 
-    // Tabağı masaya bırakmayı dener
+    public bool IsOccupied()
+    {
+        return currentItem != null;
+    }
+
     public bool TryPlaceItem(GameObject item)
     {
-        Debug.Log($"Table ({gameObject.name}): TryPlaceItem called with item: {(item != null ? item.name : "NULL")}. Current item on table: {(currentItem != null ? currentItem.name : "NULL")}");
+        if (item == null) return false;
 
-        if (item == null) return false; // Gelen eşya null ise işlem yapma
-
-        // Gelen eşyanın türünü belirle
         IngredientItem incomingIngredient = item.GetComponent<IngredientItem>();
         Pot incomingPot = item.GetComponent<Pot>();
+        Plate incomingPlate = item.GetComponent<Plate>();
 
-        // Case 1: Masada hiçbir şey yok - Herhangi bir eşya konulabilir
-        if (currentItem == null)
+        if (!IsOccupied())
         {
-            Debug.Log($"Table ({gameObject.name}): Table is empty. Placing {item.name}.");
-            // Boş masaya malzeme veya tencere konulabilir
-            currentItem = item;
-            item.transform.SetParent(itemPoint);
-            item.transform.localPosition = Vector3.zero;
-            item.transform.localRotation = Quaternion.identity;
-            Debug.Log($"Table ({gameObject.name}): Item {item.name} placed on empty table. Returning TRUE.");
+            PlaceItemOnEmptyTable(item);
             return true;
         }
-
-        // Case 2: Masada bir eşya var
-        else 
+        else
         {
-            Debug.Log($"Table ({gameObject.name}): Table is NOT empty. Current item: {currentItem.name}.");
-            // Gelen eşya malzeme ise
             if (incomingIngredient != null)
             {
                 Pot potOnTable = currentItem.GetComponent<Pot>();
-                if (potOnTable != null) // Masadaki eşya tencere ise, malzemeyi tencereye koymayı dene
+                if (potOnTable != null)
                 {
-                    Debug.Log($"Table ({gameObject.name}): Found pot on table: {potOnTable.name}. Attempting to add ingredient {incomingIngredient.ingredient.ingredientName}.");
                     if (potOnTable.AddIngredient(incomingIngredient.ingredient))
                     {
-                        Debug.Log($"Table ({gameObject.name}): Ingredient {incomingIngredient.ingredient.ingredientName} added to pot on table {gameObject.name}. Returning TRUE.");
-                        return true; // Malzeme tencereye eklendi
+                        Destroy(item);
+                        return true;
+                    }
+                    return false;
+                }
+                Debug.LogWarning("Table is occupied.");
+                return false;
+            }
+            else if (incomingPot != null)
+            {
+                Debug.LogWarning("Table is occupied.");
+                return false;
+            }
+            else if (incomingPlate != null)
+            {
+                Pot potOnTable = currentItem.GetComponent<Pot>();
+                if (potOnTable != null)
+                {
+                    if (potOnTable.currentState == Pot.PotState.Cooked)
+                    {
+                        if (incomingPlate.IsEmpty())
+                        {
+                            Recipe servedDish = potOnTable.ServeDish();
+                            if (servedDish != null)
+                            {
+                                incomingPlate.TryPlaceDish(servedDish);
+                                Debug.Log($"Served {servedDish.name} onto the plate.");
+                            }
+                        }
+                        else
+                        {
+                            Debug.LogWarning("Plate is not empty!");
+                        }
                     }
                     else
                     {
-                        Debug.LogWarning($"Table ({gameObject.name}): Pot.AddIngredient failed for {incomingIngredient.ingredient.ingredientName}. Pot state: {potOnTable.currentState}. Item remains in hand. Returning FALSE.");
-                        return false; // Malzeme tencereye eklenemedi, elde kalır
+                        Debug.LogWarning("Pot is not cooked!");
                     }
+                    return false; // The plate itself is not placed on the table
                 }
-                else // Masadaki eşya tencere değilse, malzemeyi koyamazsın
-                {
-                    Debug.LogWarning($"Table ({gameObject.name}): Incoming is ingredient, but current item ({currentItem.name}) is not a pot. Cannot place ingredient. Item remains in hand. Returning FALSE.");
-                    return false; // Malzeme masaya konamaz, elde kalır
-                }
+                Debug.LogWarning("Table is occupied.");
+                return false;
             }
-            // Gelen eşya tencere ise
-            else if (incomingPot != null)
-            {
-                Debug.LogWarning($"Table ({gameObject.name}): Cannot place pot {item.name}. Table already has {currentItem.name}. Item remains in hand. Returning FALSE.");
-                return false; // Masa dolu, tencere konamaz, elde kalır
-            }
-            // Gelen eşya başka bir tür ise (ne malzeme ne tencere)
-            else
-            {
-                Debug.LogWarning($"Table ({gameObject.name}): Cannot place {item.name}. Table already has {currentItem.name}. Item remains in hand. Returning FALSE.");
-                return false; // Masa dolu, eşya konamaz, elde kalır
-            }
+            return false;
         }
     }
 
-    // Masadan tabağı almayı dener
+    private void PlaceItemOnEmptyTable(GameObject item)
+    {
+        currentItem = item;
+        item.transform.SetParent(itemPoint);
+        item.transform.localPosition = Vector3.zero;
+        item.transform.localRotation = Quaternion.identity;
+    }
+
     public GameObject TryTakeItem()
     {
-        Debug.Log($"Table ({gameObject.name}): TryTakeItem called. Current item on table: {(currentItem != null ? currentItem.name : "NULL")}");
-        if (currentItem != null)
-        {
-            GameObject itemToTake = currentItem;
-            currentItem = null;
-            
-            itemToTake.transform.SetParent(null); // Parent'ı kaldır
-            Debug.Log($"Table ({gameObject.name}): Item {itemToTake.name} taken from table. Returning item.");
-            return itemToTake;
-        }
-        Debug.Log($"Table ({gameObject.name}): is empty. Nothing to take. Returning NULL.");
-        return null;
+        if (!IsOccupied()) return null;
+
+        GameObject itemToTake = currentItem;
+        currentItem = null;
+        itemToTake.transform.SetParent(null);
+        return itemToTake;
     }
 }

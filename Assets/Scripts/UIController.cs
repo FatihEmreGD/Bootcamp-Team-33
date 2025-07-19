@@ -18,7 +18,7 @@ public class UIController : MonoBehaviour
     {
         if (playerInteraction != null)
         {
-            playerInteraction.Interact(); // Doğrudan PlayerInteraction'ın Interact metodunu çağır
+            playerInteraction.OnUniversalInteractionButtonPress();
         }
         else
         {
