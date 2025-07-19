@@ -148,10 +148,44 @@ Not: Ekibin geneli cumartesi pazar oyun için çalışma vakti ayırabildiğinde
 
 </details>
 
+ÖNEMLİ NOT: Sprint Review ve Retrospective şu anki duruma göre oluşturulmuştur. Haftasonu tüm görevlerin bitmesi ve oyunun test edilmesi planlandığından bu görevler tamamlanırsa sprint ssleri ve bu kısım yeniden yazılacaktır. 
 
 - **Sprint Review**:
-  
+
+  - Sprint 2'nin temel hedefi, oyunun yapısal olarak genişlemesini sağlamak ve kullanıcı etkileşimlerini zenginleştirecek sistemlerin temelini atmaktı. Bu kapsamda sınıf sistemleri, sipariş–yemek hazırlama döngüsü, kullanıcı arayüzleri ve ses efektleri gibi pek çok alan eş zamanlı olarak ele alındı.
+Sprint başında belirlenen hedef puan 110’du. Ancak sprint sonuna geldiğimizde, bazı görevlerin hâlâ In Progress ve To-Do sütununda. Özellikle UI tasarımı tarafında görevlerin büyük bölümü başarıyla tamamlandı. Kodlama kısmında ise sınıf sistemleri ve etkileşimli sistemler (örneğin yemek pişirme, zaman yönetimi, müşteri oturtma sistemi) büyük ölçüde hayata geçirildi.
+
+   - **Sprint boyunca tamamlanan bazı önemli çıktılar şunlardır:**
+    - Giriş ekranı ve sınıf seçim ekranlarının UI tasarımı ve uygulanması
+    - Yemek pişirme sistemi ile zaman ve müşteri sabrı yönetimi sistemlerinin geliştirilmesi
+    - Menü ve tıklama sesleri, mutfak ortam seslerinin dahil edilmesi
+      
+   - **Buna karşın aşağıdaki görevler sprint sonunda hâlâ In Progress veya To-Do olarak kaldı:**
+    - Günlük restoran sistemi (oyun döngüsü ve gün sonu ekranı)
+    - Arka plan müziği varyasyonları
+    - Sipariş ve görev pop-up UI’ları
+    - Müşteri oturma sistemi
+    - Karakter tanıtım diyalog sistemi
+  - Bu görevlerin tamamlanamamasında bazı sistemlerin birbirine bağlı olarak ilerlemesi, teknik zorluklar ve zaman yönetiminde yaşanan gecikmeler etkili oldu.
+    
   - Sprint Review katılımcıları: Nurşah Vayvalakyan, Eren Çivril, Fatih Emre, Ayşe Sena Yengin.
     
 - **Sprint Retrospective:**
   
+  - Sprint 2 süresince takım olarak görev paylaşımı ve iş bölümü açısından daha dengeli ve verimli bir yapı yakalandı. UI tasarımı görevleri tamamlandı. Kodlama tarafında ise temel sistemlerin çoğu oluşturuldu ancak bazı görevlerin entegrasyonu ve nihai testleri tamamlanamadı. Bu durum, tamamlanan işlerin sahada nasıl çalıştığını gözlemleme şansını sınırladı.
+  
+  - **Sprint sonunda gözlemlenen bazı önemli noktalar şunlardır:**
+  
+  -Takım içi iletişim ve görev takibi önceki sprintlere göre daha iyiydi.
+  - Görevlerin büyük kısmı tamamlandı, ancak kalan görevler In Progress durumunda kaldı.
+  - Bazı sistemler tamamlandı fakat birlikte test edilip entegre edilmediği için oyunun genel işleyişine dair net bir izlenim edinilemedi.
+    
+  - **Sprint 3 için çıkarılan dersler ve alınacak aksiyonlar:**
+    
+Sprint 3, hem entegrasyon hem hata ayıklama hem de son ses–görsel detayların tamamlandığı sprint olmalı.
+Bu sprintte sadece yeni görevler değil, Sprint 2’nin çıktılarının birlikte çalışabilirliği ve işleyişi de test edilmeli.
+Görevlerin bitiş tarihlerine tam uyum sağlanmalı ve teslimlerde gecikme yaşanmamalı.
+Sprint 3 backlog’u, Sprint 2'nin sonunda yapılan değerlendirmelere göre yeniden şekillendirilmeli.
+Son sprint olması nedeniyle ekip olarak daha fazla efor ve odakla çalışılmalı.
+Bu retrospektif ışığında, Sprint 3’ün en yüksek verimle tamamlanabilmesi için önceliklerin net olarak belirlenmesi ve tamamlanan sistemlerin entegre bir şekilde test edilmesi kritik önem taşımaktadır.
+
