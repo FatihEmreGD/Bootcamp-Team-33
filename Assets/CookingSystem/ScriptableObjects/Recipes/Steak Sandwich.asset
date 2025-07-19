@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredIngredients:
   - {fileID: 11400000, guid: ba822d79b561ebf4490ac008f6124199, type: 2}
-  - {fileID: 11400000, guid: 5d13894fa752c59429541b617ff4537b, type: 2}
+  - {fileID: 11400000, guid: ec24f69c572ac3445bbdd19a700b1989, type: 2}
   - {fileID: 11400000, guid: e814b30504af3d447ab9833a64966db4, type: 2}
   cookingTime: 12
   burnTime: 20
